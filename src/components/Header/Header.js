@@ -1,17 +1,31 @@
 import { Link, useNavigate } from "react-router-dom";
-import HeaderBtn from "./HeaderBtn";
 import "./Header.css";
 const Header = () => {
   const navigate = useNavigate();
 
   return (
     <>
-      <div className="header" onClick={() => navigate("/")}>
-        <img className="header__logo" src="/assets/images/logo.png"></img>
+      <div className="header">
+        <img
+          className="header__logo"
+          src="/assets/images/logo.png"
+          onClick={() => navigate("/")}
+        ></img>
 
         <nav className="header__nav">
-          <Link to="/portfolio" className="header__blueBtn header__Btn">
-            Portfolio
+          <div className="header__BtnDiv">
+            <Link to="/portfolio" className="header__Btn header__blueBtn">
+              portfolio
+            </Link>
+          </div>
+          <Link to="/news" className="header__Btn header__orangeBtn">
+            news
+          </Link>
+          <Link to="/about" className=" header__Btn header__greenBtn">
+            about imtv
+          </Link>
+          <Link to="/contact" className=" header__Btn header__pinkBtn">
+            contact
           </Link>
         </nav>
       </div>

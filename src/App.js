@@ -4,13 +4,13 @@ import Portfolio from "./components/Portfolio.js";
 import Contact from "./components/Contact.js";
 import News from "./components/News.js";
 import About from "./components/About.js";
-import VideoCarousel from "./components/VideoCarousel";
+import VideoSlider from "./components/VideoSlider/VideoSlider";
 
 function Home() {
   return (
     <>
       <Header />
-      <VideoCarousel />
+      <VideoSlider />
     </>
   );
 }

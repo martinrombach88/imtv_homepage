@@ -1,5 +1,12 @@
+import Header from "../components/Header/Header";
+
 const News = () => {
-  return <div>News</div>;
+  return (
+    <>
+      <Header />
+      <div>News</div>
+    </>
+  );
 };
 
 export default News;
