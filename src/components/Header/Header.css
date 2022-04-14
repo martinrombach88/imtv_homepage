@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2% 2% 2% 2%;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 8%;
+}
+
+.header__Btn {
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+}
+
+.header__BlueBtn {
+  background-color: rgb(53, 218, 253);
+}
+
+.header__Btn:active,
+.article__Btn:active {
+  transform: translateY(10%);
+}
