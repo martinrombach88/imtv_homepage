@@ -23,7 +23,7 @@ function App() {
         <Route path="portfolio" element={<Portfolio />} />
         <Route path="about" element={<About />} />
         <Route path="news" element={<News />} />
-        <Route path="contact" element={<Contact />} />
+        <Route path="contact" element={<Contact />} />p
       </Routes>
     </div>
   );

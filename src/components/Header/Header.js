@@ -27,6 +27,7 @@ const Header = () => {
           <Link to="/contact" className=" header__Btn header__pinkBtn">
             contact
           </Link>
+          <div className="header__Btn header__Lang">언어 바꾸다</div>
         </nav>
       </div>
     </>

@@ -3,7 +3,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0% 0% 1% 0%;
   padding: 2% 1% 2% 1%;
   background: #101010;
 }
@@ -39,6 +38,10 @@
 }
 .header__pinkBtn {
   color: rgb(255, 123, 253);
+}
+
+.header__Lang {
+  color: rgb(53, 218, 253);
 }
 
 .header__Btn:hover {
