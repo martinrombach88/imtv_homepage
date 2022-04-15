@@ -13,10 +13,29 @@
   width: 50%;
 }
 
+.header__Left {
+  display: flex;
+  width: 40%;
+}
+
 .header__logo {
-  width: 10%;
   margin-left: 1%;
   cursor: pointer;
+  width: 25%;
+}
+
+.header__Lang {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: rgb(214, 214, 214);
+  padding: 0;
+  margin: 0 5%;
+}
+
+.header__Lang img {
+  margin: 1%;
+  width: 40%;
 }
 
 .header__Btn {
@@ -29,7 +48,6 @@
 .header__blueBtn {
   color: rgb(53, 218, 253);
 }
-
 .header__orangeBtn {
   color: rgb(255, 184, 129);
 }
@@ -38,10 +56,6 @@
 }
 .header__pinkBtn {
   color: rgb(255, 123, 253);
-}
-
-.header__Lang {
-  color: rgb(53, 218, 253);
 }
 
 .header__Btn:hover {

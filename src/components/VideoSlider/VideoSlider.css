@@ -19,16 +19,16 @@
 .carousel__h3 {
   top: 5%;
   left: 45%;
-  opacity: 0.6;
+  opacity: 0.8;
   display: flex;
   justify-content: center;
   position: absolute;
   color: rgb(255, 255, 255);
 }
 
-.carousel__h3:hover {
+/* .carousel__h3:hover {
   opacity: 1;
-}
+} */
 
 .carousel-control-prev,
 .carousel-control-next {

@@ -1,5 +1,5 @@
-.video__Bg {
-  background-color: black;
+.video__Bg,
+.video__Player {
   height: 100%;
 }
 
@@ -9,9 +9,9 @@
   top: 0%;
   font-size: 7vh;
   text-decoration: none;
-  color: white;
+  color: rgb(53, 218, 253);
 }
 
 .video__Exit:hover {
-  color: rgb(53, 218, 253);
+  color: white;
 }

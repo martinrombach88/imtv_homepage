@@ -8,6 +8,7 @@ const VideoPlayer = () => {
   return (
     <div className="video__Bg">
       <ReactPlayer
+        style={{ backgroundColor: "black", margin: 0, padding: 0 }}
         url={state.prop_src}
         playing={true}
         controls={true}
