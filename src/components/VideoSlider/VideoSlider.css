@@ -12,26 +12,25 @@
   height: 100%;
 }
 
-.carousel-caption a {
-  padding: 5%;
-  color: rgb(255, 123, 253);
-  text-decoration: none;
-  opacity: 0.6;
+.carousel:hover {
+  cursor: pointer;
 }
 
-.carousel-caption a:hover {
-  color: white;
+.carousel__h3 {
+  top: 5%;
+  left: 45%;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  color: rgb(255, 255, 255);
+}
+
+.carousel__h3:hover {
   opacity: 1;
 }
 
-.carousel__VidLink a:hover {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-
-.carousel-control-prev {
-  height: 100%;
-}
+.carousel-control-prev,
 .carousel-control-next {
   height: 100%;
 }

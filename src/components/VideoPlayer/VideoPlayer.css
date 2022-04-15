@@ -1,0 +1,17 @@
+.video__Bg {
+  background-color: black;
+  height: 100%;
+}
+
+.video__Exit {
+  position: absolute;
+  right: 1%;
+  top: 0%;
+  font-size: 7vh;
+  text-decoration: none;
+  color: white;
+}
+
+.video__Exit:hover {
+  color: rgb(53, 218, 253);
+}
