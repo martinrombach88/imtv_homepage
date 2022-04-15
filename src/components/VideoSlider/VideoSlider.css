@@ -1,15 +1,14 @@
 .carousel__Container {
   display: flex;
   justify-content: center;
-  background-color: darkgray;
-  margin: 0;
-  padding: 0.4%;
+  overflow: hidden;
+  height: 80vh;
 }
 
 /* Bootstrap classes */
 .carousel {
+  padding-top: 0.5%;
   width: 64vw;
-  height: 100%;
 }
 
 .carousel:hover {

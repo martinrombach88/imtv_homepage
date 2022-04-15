@@ -53,8 +53,8 @@ const Header = () => {
         </div>
 
         <nav className="header__nav">
-          <Link to="/portfolio" className="header__Btn header__blueBtn">
-            portfolio
+          <Link to="/media" className="header__Btn header__blueBtn">
+            our media
           </Link>
           <Link to="/news" className="header__Btn header__orangeBtn">
             news

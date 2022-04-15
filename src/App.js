@@ -1,7 +1,7 @@
 import { Route, Routes, Link } from "react-router-dom";
 import Header from "./components/Header/Header.js";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer.js";
-import Portfolio from "./components/Portfolio/Portfolio.js";
+import Media from "./components/Media/Media.js";
 import Contact from "./components/Contact.js";
 import News from "./components/News.js";
 import About from "./components/About.js";
@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="media" element={<Media />} />
         <Route path="about" element={<About />} />
         <Route path="news" element={<News />} />
         <Route path="contact" element={<Contact />} />
