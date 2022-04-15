@@ -5,6 +5,7 @@
 
 .video__Exit {
   position: absolute;
+  cursor: pointer;
   right: 1%;
   top: 0%;
   font-size: 7vh;

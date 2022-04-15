@@ -1,10 +1,11 @@
 import ReactPlayer from "react-player";
 import Header from "../Header/Header.js";
 import "./VideoPlayer.css";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const VideoPlayer = () => {
   const { state } = useLocation();
+  const navigate = useNavigate();
   return (
     <div className="video__Bg">
       <ReactPlayer
@@ -17,9 +18,9 @@ const VideoPlayer = () => {
         width="100%"
         height="99vh"
       />
-      <Link to="/" className="video__Exit">
+      <p className="video__Exit" onClick={() => navigate(-1)}>
         X
-      </Link>
+      </p>
     </div>
   );
 };

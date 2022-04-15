@@ -36,8 +36,8 @@ const VideoSlider = () => {
                 width="100%"
                 height="100%"
               />
-              <Carousel.Caption>
-                <h3>{sliderVid.title}</h3>
+              <Carousel.Caption bsPrefix="carousel__Details">
+                <h4>{sliderVid.title}</h4>
               </Carousel.Caption>
             </Carousel.Item>
           );

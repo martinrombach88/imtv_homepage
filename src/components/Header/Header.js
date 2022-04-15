@@ -60,13 +60,13 @@ const Header = ({ style }) => {
             our media
           </Link>
           <Link to="/news" className="header__Btn header__orangeBtn">
-            news
+            latest news
           </Link>
           <Link to="/about" className=" header__Btn header__greenBtn">
             about imtv
           </Link>
           <Link to="/contact" className=" header__Btn header__pinkBtn">
-            contact
+            contact us
           </Link>
         </nav>
       </div>

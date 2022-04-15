@@ -5,13 +5,21 @@
   height: 90vh;
 }
 
-/* Bootstrap classes */
 .carousel {
   height: 100%;
   color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
-.carousel:hover {
+.carousel__Details {
+  display: flex;
+  text-align: center;
+  position: absolute;
+  left: 5%;
+  bottom: 30%;
+}
+
+.carousel .carousel:hover {
   cursor: pointer;
 }
 

@@ -10,8 +10,8 @@
   background: #101010;
 }
 
-.transHeader {
-  background: none;
+.initialPos {
+  position: initial;
 }
 
 .header__nav {
