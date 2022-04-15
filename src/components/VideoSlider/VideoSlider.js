@@ -35,9 +35,8 @@ const VideoSlider = () => {
                 muted={true}
                 width="100%"
                 height="100%"
-                interval="50"
               />
-              <Carousel.Caption bsPrefix="carousel__h3">
+              <Carousel.Caption>
                 <h3>{sliderVid.title}</h3>
               </Carousel.Caption>
             </Carousel.Item>

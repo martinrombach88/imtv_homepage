@@ -1,0 +1,10 @@
+.media__Img {
+  object-fit: cover;
+  width: 100%;
+  height: 70vh;
+}
+
+.media__Container {
+  margin: 0;
+  padding: 0;
+}

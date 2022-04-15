@@ -2,7 +2,10 @@ import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
 import { useState } from "react";
 
-const Header = () => {
+const Header = ({ style }) => {
+  const headerStyle = style;
+  console.log(style);
+
   const [langDefault, setLangDefault] = useState(true);
   const changeLang = () => {
     langDefault ? setLangDefault(false) : setLangDefault(true);
@@ -28,7 +31,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="header">
+      <div className={headerStyle}>
         <div className="header__Left">
           <img
             className="header__logo"

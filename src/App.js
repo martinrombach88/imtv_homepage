@@ -10,7 +10,7 @@ import VideoSlider from "./components/VideoSlider/VideoSlider";
 function Home() {
   return (
     <>
-      <Header />
+      <Header style={"header"} />
       <VideoSlider />
     </>
   );

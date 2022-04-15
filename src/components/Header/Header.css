@@ -1,10 +1,17 @@
 .header {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 2% 1% 2% 1%;
   background: #101010;
+}
+
+.transHeader {
+  background: none;
 }
 
 .header__nav {
@@ -60,6 +67,7 @@
 .header__blueBtn {
   color: rgb(53, 218, 253);
 }
+
 .header__orangeBtn {
   color: rgb(255, 184, 129);
 }

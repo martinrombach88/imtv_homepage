@@ -1,33 +1,19 @@
 .carousel__Container {
-  display: flex;
-  justify-content: center;
+  z-index: 1;
+  width: 100%;
   overflow: hidden;
-  height: 80vh;
+  height: 90vh;
 }
 
 /* Bootstrap classes */
 .carousel {
-  padding-top: 0.5%;
-  width: 64vw;
+  height: 100%;
+  color: rgb(255, 255, 255);
 }
 
 .carousel:hover {
   cursor: pointer;
 }
-
-.carousel__h3 {
-  top: 5%;
-  left: 45%;
-  opacity: 0.8;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  color: rgb(255, 255, 255);
-}
-
-/* .carousel__h3:hover {
-  opacity: 1;
-} */
 
 .carousel-control-prev,
 .carousel-control-next {
