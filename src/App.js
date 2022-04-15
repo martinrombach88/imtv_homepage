@@ -1,7 +1,7 @@
 import { Route, Routes, Link } from "react-router-dom";
 import Header from "./components/Header/Header.js";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer.js";
-import Portfolio from "./components/Portfolio.js";
+import Portfolio from "./components/Portfolio/Portfolio.js";
 import Contact from "./components/Contact.js";
 import News from "./components/News.js";
 import About from "./components/About.js";

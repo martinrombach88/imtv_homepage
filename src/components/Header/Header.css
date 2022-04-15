@@ -33,9 +33,21 @@
   margin: 0 5%;
 }
 
+.header__LangImages {
+  display: flex;
+  justify-content: space-around;
+}
+
 .header__Lang img {
-  margin: 1%;
+  cursor: pointer;
+  object-fit: cover;
+  box-sizing: border-box;
   width: 40%;
+}
+
+.header__Lang img:hover {
+  object-fit: cover;
+  box-sizing: border-box;
 }
 
 .header__Btn {
@@ -63,6 +75,7 @@
 }
 
 .header__Btn:active,
-.header__logo:active {
+.header__logo:active,
+.header__LangImages img:active {
   transform: translateY(10%);
 }
