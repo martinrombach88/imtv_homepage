@@ -4,7 +4,6 @@ import { useState } from "react";
 
 const Header = ({ style }) => {
   const headerStyle = style;
-  console.log(style);
 
   const [langDefault, setLangDefault] = useState(true);
   const changeLang = () => {
