@@ -43,6 +43,10 @@
   border-radius: 2%;
 }
 
+.news__Page a {
+  cursor: pointer;
+}
+
 .news__Article {
   display: flex;
   flex-direction: column;

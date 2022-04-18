@@ -7,12 +7,13 @@ import News from "./components/News/News.js";
 import NewsArticleView from "./components/News/NewsArticleView.js";
 import About from "./components/About.js";
 import VideoSlider from "./components/VideoSlider/VideoSlider";
+import mediaList from "./components/mediaList.js";
 
 function Home() {
   return (
     <>
       <Header style={"header"} />
-      <VideoSlider />
+      <VideoSlider mediaList={mediaList} />
     </>
   );
 }
@@ -22,7 +23,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="media" element={<Media />} />
+        <Route path="media" element={<Media mediaList={mediaList} />} />
         <Route path="about" element={<About />} />
         <Route path="news" element={<News />} />
         <Route path="news_article" element={<NewsArticleView />} />
