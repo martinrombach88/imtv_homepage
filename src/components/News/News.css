@@ -44,6 +44,7 @@
 }
 
 .news__Page a {
+  color: black;
   cursor: pointer;
 }
 
@@ -57,6 +58,7 @@
 .news__Article h3 {
   font-weight: bold;
   margin: 2% 5% 2% 5%;
+  width: 60%;
 }
 
 .news__Article img {
@@ -65,6 +67,7 @@
 
 .news__ArticleBody {
   margin: 2% 5% 2% 5%;
+  width: 60%;
 }
 .news__ArticleReturn {
   font-weight: bold;

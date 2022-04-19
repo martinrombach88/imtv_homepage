@@ -1,0 +1,27 @@
+.about__Container {
+  background-color: rgb(244, 246, 248);
+  color: black;
+  height: 100vh;
+}
+
+.about__IntroSection {
+  position: relative;
+}
+
+.about__Header {
+  width: 100%;
+  object-fit: cover;
+}
+
+.about__IntroTitle {
+  position: absolute;
+  top: 40%;
+  right: 20%;
+  color: white;
+}
+
+.about__History {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
