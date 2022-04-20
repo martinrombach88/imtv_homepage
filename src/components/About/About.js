@@ -1,27 +1,25 @@
 import Header from "../Header/Header";
 import "./About.css";
 import AboutHistory from "./AboutHistory.js";
-
-/*  */
+import AboutPartners from "./AboutPartners.js";
 
 const About = () => {
   return (
     <>
       <Header style={"header initialPos"} />
-      <div className="about__Container">
-        <header className="about__IntroSection">
-          <img
-            alt="imtvHeader"
-            src="/assets/images/aboutHeader.png"
-            className="about__Header"
-          ></img>
-          <div className="about__IntroTitle">
+      <div className="about">
+        <div className="about__Container">
+          <div className="about__Intro">
             <h1>about imtv</h1>
+            <h5>
+              IMTV Ltd. has been continuously growing based on the trust of
+              domestic and foreign broadcasters and platforms. For 20 years our
+              talented writers, creators, and directors have produced over 60
+              television programs, films and dramas and over 100 documentaries.
+            </h5>
           </div>
-        </header>
-        <section>
-          <AboutHistory />
-        </section>
+          <AboutPartners />
+        </div>
       </div>
     </>
   );
