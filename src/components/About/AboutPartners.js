@@ -4,12 +4,11 @@ const AboutPartners = () => {
     let urlArray = [];
     for (let i = 1; i <= kNum; i++) {
       urlArray.push(url + "kr" + i + ".png");
-      console.log(url + "kr" + i + ".png");
     }
     for (let i = 1; i <= wNum; i++) {
       urlArray.push(url + "w" + i + ".png");
-      console.log(url + "w" + i + ".png");
     }
+
     const renderedImages = urlArray.map((url, index) => {
       return <img src={url} key={index} alt="partner" />;
     });
@@ -17,7 +16,6 @@ const AboutPartners = () => {
   };
 
   const renderedImages = generateImages(22, 19);
-
   return (
     <div className="about__Partners">
       <h1>partners</h1>

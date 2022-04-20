@@ -13,7 +13,7 @@ const About = () => {
             <h1>about imtv</h1>
             <h5>
               IMTV Ltd. has been continuously growing based on the trust of
-              domestic and foreign broadcasters and platforms. For 20 years our
+              Korean and foreign broadcasters and platforms. For 20 years our
               talented writers, creators, and directors have produced over 60
               television programs, films and dramas and over 100 documentaries.
             </h5>
