@@ -17,31 +17,29 @@
   justify-content: center;
   align-items: center;
   padding: 1% 2%;
-  width: 60%;
+  width: 80%;
 }
 
+.about__Intro h1,
 .about__Partners h1 {
-  padding: 2% 0%;
-}
-
-.about__Intro h5 {
-  padding: 2% 0%;
+  margin-bottom: 5%;
 }
 
 .about__PartnersCycler {
+  margin: 1%;
   overflow: hidden;
   flex-wrap: wrap;
   width: 80%;
-  height: 45%;
+  height: 40%;
   background-color: white;
-  border-radius: 5%;
+  border-radius: 8%;
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
 }
 
 .about__PartnersCycler div {
   --animation: slide;
-  animation: var(--animation, none) 30s infinite linear;
-  height: 300%;
+  animation: var(--animation, none) 200s infinite linear;
+  height: 420%;
 }
 
 .about__Partners img {
@@ -55,37 +53,20 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-400%);
+    transform: translateY(-420%);
   }
   100% {
     transform: translateY(0%);
   }
 }
-/* 
-@keyframes slide {
-  0%,
-  12.66%,
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-  16.66%,
-  29.32% {
-    transform: translate3d(0, -50%, 0);
-  }
-  33.32%,
-  45.98% {
-    transform: translate3d(0, -100%, 0);
-  }
-  49.98%,
-  62.64% {
-    transform: translate3d(0, -200%, 0);
-  }
-  66.64%,
-  79.3% {
-    transform: translate3d(0, -100%, 0);
-  }
-  83.3%,
-  95.96% {
-    transform: translate3d(0, -0%, 0);
-  }
-} */
+
+.about__CompanyContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about__CompanyContainer h1 {
+  padding-bottom: 1%;
+}
