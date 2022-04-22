@@ -1,12 +1,9 @@
 const AboutPartners = () => {
-  const generateImages = (kNum, wNum) => {
+  const generateImages = (num) => {
     let url = "/assets/images/partners/";
     let urlArray = [];
-    for (let i = 1; i <= kNum; i++) {
-      urlArray.push(url + "kr" + i + ".png");
-    }
-    for (let i = 1; i <= wNum; i++) {
-      urlArray.push(url + "w" + i + ".png");
+    for (let i = 1; i <= num; i++) {
+      urlArray.push(url + "p" + i + ".png");
     }
 
     const renderedImages = urlArray.map((url, index) => {

@@ -50,13 +50,13 @@
 
 @keyframes slide {
   0% {
-    transform: translateY(0);
+    transform: translateY(10%);
   }
   50% {
     transform: translateY(-370%);
   }
   100% {
-    transform: translateY(0%);
+    transform: translateY(10%);
   }
 }
 
