@@ -30,7 +30,7 @@
   overflow: hidden;
   flex-wrap: wrap;
   width: 80%;
-  height: 40%;
+  height: 45%;
   background-color: white;
   border-radius: 8%;
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
@@ -53,20 +53,95 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-420%);
+    transform: translateY(-370%);
   }
   100% {
     transform: translateY(0%);
   }
 }
 
-.about__CompanyContainer {
+.about__CompanyContainer,
+.about__StaffContainer {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 2%;
 }
 
-.about__CompanyContainer h1 {
+.about__CompanyContainer h1,
+.about__StaffContainer h1 {
   padding-bottom: 1%;
+}
+
+.about__Staff {
+  margin: 0% 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.about__StaffMember {
+  padding: 2% 0%;
+  width: 30%;
+}
+
+.about__StaffIcon {
+  border-radius: 50%;
+  height: 200px;
+}
+
+.about__StaffTitle {
+  position: relative;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  text-align: center;
+}
+
+.about__StaffInfo {
+  list-style: none;
+}
+
+.about__ProfileContainer {
+  background-color: rgb(244, 246, 248);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__Profile {
+  display: flex;
+  padding: 2% 6%;
+}
+
+.about__ProfileImage {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+}
+
+.about__ProfileImage img {
+  width: 350px;
+  border-radius: 5%;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
+}
+
+.about__ProfileExit {
+  text-align: center;
+  width: 50px;
+  margin-top: 10%;
+}
+
+.about__ProfileInfo {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+}
+
+.about__ProfileInfo ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }

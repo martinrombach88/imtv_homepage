@@ -2,7 +2,7 @@ const mediaList = [
   {
     id: 1,
     title: "쉿! 그놈을 부탁해",
-    mediaImg: "./assets/images/shhWide.png",
+    mediaImg: "./assets/images/media/shhWide.png",
     src: "./assets/videos/shhClip.mp4",
     prop_src: "./assets/videos/shhFull.mp4",
     channels: "olleh tv, Seezn, Skylife",
@@ -16,7 +16,7 @@ const mediaList = [
   {
     id: 2,
     title: "그남자 오수",
-    mediaImg: "./assets/images/osuWide.png",
+    mediaImg: "./assets/images/media/osuWide.png",
     src: "./assets/videos/osuClip.mp4",
     prop_src: "./assets/videos/osuFull.mp4",
     channels: "OCN",

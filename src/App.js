@@ -6,9 +6,11 @@ import Contact from "./components/Contact.js";
 import News from "./components/News/News.js";
 import NewsArticleView from "./components/News/NewsArticleView.js";
 import About from "./components/About/About.js";
+import AboutProfile from "./components/About/AboutProfile.js";
 import VideoSlider from "./components/VideoSlider/VideoSlider";
 import mediaList from "./components/mediaList.js";
 import newsList from "./components/newsList.js";
+import staffList from "./components/staffList.js";
 
 function Home() {
   return (
@@ -25,11 +27,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="media" element={<Media mediaList={mediaList} />} />
-        <Route path="about" element={<About />} />
+        <Route path="about" element={<About staffList={staffList} />} />
         <Route path="news" element={<News list={newsList} />} />
         <Route path="news_article" element={<NewsArticleView />} />
         <Route path="contact" element={<Contact />} />
         <Route path="video" element={<VideoPlayer />} />
+        <Route path="profile" element={<AboutProfile />} />
       </Routes>
     </div>
   );

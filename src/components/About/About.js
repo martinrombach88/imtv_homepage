@@ -1,9 +1,10 @@
-import Header from "../Header/Header";
 import "./About.css";
+import Header from "../Header/Header";
 import AboutHistory from "./AboutHistory.js";
 import AboutPartners from "./AboutPartners.js";
+import AboutStaff from "./AboutStaff.js";
 
-const About = () => {
+const About = ({ staffList }) => {
   return (
     <>
       <Header style={"header initialPos"} />
@@ -22,8 +23,12 @@ const About = () => {
           <AboutPartners />
         </div>
         <div className="about__CompanyContainer">
-          <h1>20 years of production</h1>
+          <h1>twenty years of production</h1>
           <AboutHistory />
+        </div>
+        <div className="about__StaffContainer">
+          <h1>key team</h1>
+          <AboutStaff staffList={staffList} />
         </div>
       </div>
     </>

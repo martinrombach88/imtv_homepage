@@ -8,7 +8,6 @@ const AboutPartners = () => {
     for (let i = 1; i <= wNum; i++) {
       urlArray.push(url + "w" + i + ".png");
     }
-    urlArray.sort();
 
     const renderedImages = urlArray.map((url, index) => {
       return <img src={url} key={index} alt="partner" />;
