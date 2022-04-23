@@ -12,7 +12,7 @@ const ContactProposal = () => {
       data.plan[0].name ? "\nPlan: " + data.plan[0].name : null
     } ${data.scenario[0].name ? "\nScenario: " + data.scenario[0].name : null}${
       data.extra[0].name ? "\nAdditional: " + data.extra[0].name : null
-    }\nSummary: ${data.summary}`;
+    }\nSummary: ${data.summary}\nPersonal Info Consent: ${data.consent}`;
     alert(formInfo);
   };
 

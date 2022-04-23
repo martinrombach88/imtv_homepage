@@ -9,7 +9,7 @@ const Contact = () => {
     <>
       <Header style={"header initialPos"} />
       <div className="contact">
-        <h1>proposals and partnerships</h1>
+        <h1>contact</h1>
         <div className="contact__Buttons">
           <button
             type="button"
@@ -27,11 +27,10 @@ const Contact = () => {
           </button>
         </div>
         <div className="contact__General">
-          <h1>general</h1>
           <div className="contact__Map">
             <iframe
               width="600"
-              height="450"
+              height="280"
               loading="lazy"
               src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJqZzYim2ZfDURj9rUZJUavWo&key=AIzaSyBdomiOKlDqVL_pXimPVEzEZ3JUZ2Vj3zU"
             ></iframe>
