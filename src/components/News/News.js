@@ -1,4 +1,5 @@
 import Header from "../Header/Header";
+import Footer from "../Header/Footer";
 import "./News.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -28,6 +29,7 @@ const News = ({ list }) => {
           paginate={paginate}
         />
       </div>
+      <Footer />
     </>
   );
 };

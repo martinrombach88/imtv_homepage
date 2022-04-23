@@ -12,7 +12,8 @@ const AboutStaff = ({ staffList }) => {
       <div className="about__Staff">
         <AboutStaffMember staffMember={staffList[0]} />
       </div>
-      <div className="about__Staff">{aboutStaffMembers}</div>;
+      <div className="about__Staff">{aboutStaffMembers}</div>
+      
     </>
   );
 };

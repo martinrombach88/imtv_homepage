@@ -1,5 +1,6 @@
 import "./About.css";
 import Header from "../Header/Header";
+import Footer from "../Header/Footer";
 import AboutHistory from "./AboutHistory.js";
 import AboutPartners from "./AboutPartners.js";
 import AboutStaff from "./AboutStaff.js";
@@ -29,8 +30,12 @@ const About = ({ staffList }) => {
         <div className="about__StaffContainer">
           <h1>key team</h1>
           <AboutStaff staffList={staffList} />
+          <p className="about__StaffWebDev">
+            Website developed by Martin Rombach
+          </p>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

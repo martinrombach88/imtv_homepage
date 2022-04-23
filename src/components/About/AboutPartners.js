@@ -5,14 +5,13 @@ const AboutPartners = () => {
     for (let i = 1; i <= num; i++) {
       urlArray.push(url + "p" + i + ".png");
     }
-
     const renderedImages = urlArray.map((url, index) => {
       return <img src={url} key={index} alt="partner" />;
     });
     return renderedImages;
   };
+  const renderedImages = generateImages(41);
 
-  const renderedImages = generateImages(22, 19);
   return (
     <div className="about__Partners">
       <h1>partners</h1>
