@@ -34,15 +34,14 @@ const Contact = () => {
           </button>
         </div>
         <div className="contact__General">
-          {/* <div className="contact__Map">
-          
+          <div className="contact__Map">
             <iframe
               width="600"
               height="280"
               loading="lazy"
               src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJqZzYim2ZfDURj9rUZJUavWo&key=AIzaSyBdomiOKlDqVL_pXimPVEzEZ3JUZ2Vj3zU"
             ></iframe>
-          </div> */}
+          </div>
           <div className="contact__DetailsENG">
             <div className="contact__AddressENG">
               <h5>
