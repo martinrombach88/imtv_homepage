@@ -60,9 +60,9 @@ const ContactInquiry = () => {
             <div className="contact__FormField">
               <p>
                 <label htmlFor="title">Title</label>
-                <p className="contact__Label">
-                  Please enter your title in the company
-                </p>
+              </p>
+              <p className="contact__Label">
+                Please enter your title in the company
               </p>
               <input
                 type="title"
@@ -97,9 +97,9 @@ const ContactInquiry = () => {
             <div className="contact__FormField">
               <p>
                 <label htmlFor="field">Partnership</label>
-                <p className="contact__Label">
-                  Please choose the field you would like to partner with
-                </p>
+              </p>
+              <p className="contact__Label">
+                Please choose the field you would like to partner with
               </p>
               <select
                 name="field"

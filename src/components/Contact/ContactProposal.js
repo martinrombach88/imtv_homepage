@@ -80,10 +80,10 @@ const ContactProposal = () => {
 
             <div className="contact__FormField form-check">
               <div className="contact__GenderField">
-                <label for="gender">Gender</label>
+                <label htmlFor="gender">Gender</label>
               </div>
               <div className="form-check form-check-inline">
-                <label for="male">Male</label>
+                <label htmlFor="male">Male</label>
                 <input
                   type="radio"
                   id="male"
@@ -94,7 +94,7 @@ const ContactProposal = () => {
                 />
               </div>
               <div className="form-check form-check-inline">
-                <label for="female">Female</label>
+                <label htmlFor="female">Female</label>
                 <input
                   type="radio"
                   id="female"
@@ -105,7 +105,7 @@ const ContactProposal = () => {
                 />
               </div>
               <div className="form-check form-check-inline">
-                <label for="neutral">Neutral</label>
+                <label htmlFor="neutral">Neutral</label>
                 <input
                   type="radio"
                   id="neutral"
@@ -131,7 +131,7 @@ const ContactProposal = () => {
             </div>
 
             <div className="contact__FormField mb-3">
-              <label for="plan">Plan</label>
+              <label htmlFor="plan">Plan</label>
               <input
                 className="form-control"
                 type="file"
@@ -141,7 +141,7 @@ const ContactProposal = () => {
             </div>
 
             <div className="contact__FormField mb-3">
-              <label for="scenario" class="form-label">
+              <label htmlFor="scenario" class="form-label">
                 Scenario
               </label>
               <input
@@ -153,7 +153,7 @@ const ContactProposal = () => {
             </div>
 
             <div className="contact__FormField mb-3">
-              <label for="extra" class="form-label">
+              <label htmlFor="extra" class="form-label">
                 Additional
               </label>
               <input
@@ -165,11 +165,11 @@ const ContactProposal = () => {
             </div>
 
             <div className="mb-3 contact__FormField">
-              <label for="exampleFormControlTextarea1" class="form-label">
+              <label htmlFor="exampleFormControlTextarea1" class="form-label">
                 Summary and Extra Information
               </label>
               <textarea
-                class="form-control"
+                className="form-control"
                 rows="3"
                 {...register("summary", { required: true })}
               ></textarea>

@@ -2,12 +2,16 @@ import Header from "../Header/Header";
 import Footer from "../Header/Footer";
 import "./Contact.css";
 import { useNavigate, useLocation } from "react-router-dom";
-import { LangProvider, useLang } from "../Header/LangContext";
+import { LangProvider, useLang, useLangUpdate } from "../Header/LangContext";
 const Contact = () => {
   const lang = useLang();
+  // const updateLang = useLangUpdate();
   // const state = useLocation();
+  // if (state.state.lang != lang) {
+  //   updateLang(state.state.lang);
+  // }
   const navigate = useNavigate();
-  // console.log(state);
+
   return (
     <LangProvider>
       <Header style={"header initialPos"} />
@@ -30,14 +34,14 @@ const Contact = () => {
           </button>
         </div>
         <div className="contact__General">
-          <div className="contact__Map">
+          {/* <div className="contact__Map">
             <iframe
               width="600"
               height="280"
               loading="lazy"
               src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJqZzYim2ZfDURj9rUZJUavWo&key=AIzaSyBdomiOKlDqVL_pXimPVEzEZ3JUZ2Vj3zU"
             ></iframe>
-          </div>
+          </div> */}
           <div className="contact__DetailsENG">
             <div className="contact__AddressENG">
               <h5>

@@ -1,7 +1,11 @@
 import React from "react";
+import {
+  LangProvider,
+  useLang,
+  useLangUpdate,
+} from "./components/Header/LangContext";
 import { Route, Routes, Link } from "react-router-dom";
-import { LangProvider } from "./components/Header/LangContext";
-import { useLang, useLangUpdate } from "./components/Header/LangContext";
+
 import Header from "./components/Header/Header.js";
 import Footer from "./components/Header/Footer.js";
 import VideoSlider from "./components/VideoSlider/VideoSlider";

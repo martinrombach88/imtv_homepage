@@ -17,7 +17,6 @@ export function LangProvider({ children }) {
   const toggleLang = () => {
     setLang((prevLang) => !prevLang);
   };
-  console.log(lang);
   return (
     <LangContext.Provider value={lang}>
       <LangUpdateContext.Provider value={toggleLang}>
