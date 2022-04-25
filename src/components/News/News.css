@@ -43,7 +43,7 @@
   border-radius: 2%;
 }
 
-.news__Page a {
+.news__Page p {
   color: black;
   cursor: pointer;
 }
