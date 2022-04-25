@@ -1,8 +1,8 @@
 import Header from "../Header/Header";
 import Footer from "../Header/Footer";
 import "./Contact.css";
-import { useNavigate, useLocation } from "react-router-dom";
-import { LangProvider, useLang, useLangUpdate } from "../Header/LangContext";
+import { useNavigate } from "react-router-dom";
+import { LangProvider, useLang } from "../Header/LangContext";
 const Contact = () => {
   const lang = useLang();
   // const updateLang = useLangUpdate();
@@ -14,7 +14,7 @@ const Contact = () => {
 
   return (
     <LangProvider>
-      <Header style={"header initialPos"} />
+      <Header headerStyle={"header initialPos"} />
       <div className="contact">
         <h1>contact</h1>
         <div className="contact__Buttons">

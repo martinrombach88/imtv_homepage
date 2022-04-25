@@ -13,7 +13,7 @@ const AboutProfile = () => {
   });
   return (
     <>
-      <Header style={"header initialPos"} />
+      <Header headerStyle={"header initialPos"} />
       <div className="about__ProfileContainer">
         <div className="about__Profile">
           <div className="about__ProfileImage">

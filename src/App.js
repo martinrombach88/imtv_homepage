@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header.js";
 import Footer from "./components/Header/Footer.js";
 import VideoSlider from "./components/VideoSlider/VideoSlider";
@@ -15,18 +15,14 @@ import ContactInquiry from "./components/Contact/ContactInquiry.js";
 import mediaList from "./components/mediaList.js";
 import newsList from "./components/newsList.js";
 import staffList from "./components/staffList.js";
-import {
-  LangProvider,
-  useLang,
-  useLangUpdate,
-} from "./components/Header/LangContext";
+import { LangProvider } from "./components/Header/LangContext";
 
 // export const LangContext = React.createContext();
 
 function Home() {
   return (
     <LangProvider>
-      <Header style={"header"} />
+      <Header headerStyle={"header"} />
       <VideoSlider mediaList={mediaList} />
       <Footer />
     </LangProvider>

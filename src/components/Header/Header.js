@@ -1,10 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
-import { useState } from "react";
 import { useLang, useLangUpdate } from "./LangContext";
 
-const Header = ({ style }) => {
-  const headerStyle = style;
+const Header = ({ headerStyle }) => {
   const lang = useLang();
   const toggleLang = useLangUpdate();
   const navigate = useNavigate();
@@ -24,7 +22,7 @@ const Header = ({ style }) => {
 
   let koText = lang ? "" : ".header__GreyText";
   let enText = lang ? ".header__GreyText" : "";
-  let currLang = lang ? flags.krflag.name : flags.usflag.name;
+  // let currLang = lang ? flags.krflag.name : flags.usflag.name;
   let krFlag = lang ? flags.krflag.color_url : flags.krflag.grey_url;
   let enFlag = lang ? flags.usflag.grey_url : flags.usflag.color_url;
 
@@ -34,6 +32,7 @@ const Header = ({ style }) => {
         <div className="header__Left">
           <img
             className="header__logo"
+            alt="logo"
             src="/assets/images/logo.png"
             onClick={() => navigate("/")}
           ></img>
