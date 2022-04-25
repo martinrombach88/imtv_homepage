@@ -8,8 +8,6 @@ import NewsPagination from "./NewsPagination";
 import { LangProvider } from "../Header/LangContext";
 
 const News = ({ list }) => {
-  const navigate = useNavigate();
-
   //Pagination
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
   const [currentPage, setCurrentPage] = useState(1);

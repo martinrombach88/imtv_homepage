@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import "./Contact.css";
 
 const ContactProposal = () => {
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
     const formInfo = `Your Submission: \nName: ${data.name}\nDate of Birth: ${
@@ -19,7 +19,7 @@ const ContactProposal = () => {
 
   return (
     <>
-      <Header style={"header initialPos"} />
+      <Header headerStyle={"header initialPos"} />
       <div className="contact">
         <div className="contact__FormHeader">
           <h2>project proposal / scenario</h2>

@@ -2,8 +2,10 @@ import AboutStaffMember from "./AboutStaffMember.js";
 
 const AboutStaff = ({ staffList }) => {
   const aboutStaffMembers = staffList.map((member, index) => {
-    if (member.titleENG != "CEO") {
+    if (member.titleENG !== "CEO") {
       return <AboutStaffMember key={index} staffMember={member} />;
+    } else {
+      return <></>;
     }
   });
 
@@ -13,7 +15,6 @@ const AboutStaff = ({ staffList }) => {
         <AboutStaffMember staffMember={staffList[0]} />
       </div>
       <div className="about__Staff">{aboutStaffMembers}</div>
-      
     </>
   );
 };

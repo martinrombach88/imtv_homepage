@@ -1,5 +1,4 @@
 import ReactPlayer from "react-player";
-import Header from "../Header/Header.js";
 import "./VideoPlayer.css";
 import { useLocation, useNavigate } from "react-router-dom";
 

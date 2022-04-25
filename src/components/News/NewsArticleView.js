@@ -13,7 +13,7 @@ const NewsArticleView = () => {
   );
   return (
     <div className="news news__Article">
-      <Header style={"header initialPos"} />
+      <Header headerStyle={"header initialPos"} />
       <h3>{article.title}</h3>
       <img src={article.image} alt={article.title} />
       {articleImage2}

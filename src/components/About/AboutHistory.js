@@ -1,10 +1,8 @@
 import {
   Timeline,
   Events,
-  UrlButton,
   ImageEvent,
   TextEvent,
-  YouTubeEvent,
   themes,
   createTheme,
 } from "@merc/react-timeline";

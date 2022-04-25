@@ -28,7 +28,11 @@ const MediaItem = (media) => {
       onMouseEnter={imageEnter}
       onMouseLeave={imageLeave}
     >
-      <img className={changeClassImage()} src={mediaItem.mediaImg}></img>
+      <img
+        className={changeClassImage()}
+        src={mediaItem.mediaImg}
+        alt={mediaItem.title}
+      ></img>
       <div className={changeClass()}>
         <h2>{mediaItem.title}</h2>
         <h5>{mediaItem.description}</h5>

@@ -1,4 +1,4 @@
-import { useLang, useLangUpdate } from "./LangContext";
+import { useLang } from "./LangContext";
 
 const Footer = () => {
   const lang = useLang();
