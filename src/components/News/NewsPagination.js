@@ -7,9 +7,9 @@ const NewsPagination = ({ postsPerPage, totalPosts, paginate }) => {
   const renderedNumbers = pageNumbers.map((number) => {
     return (
       <li key={number} className="page-item news__Page">
-        <a onClick={() => paginate(number)} className="page-link" href="#">
+        <p onClick={() => paginate(number)} className="page-link" href="#">
           {number}
-        </a>
+        </p>
       </li>
     );
   });
