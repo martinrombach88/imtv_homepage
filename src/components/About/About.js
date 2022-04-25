@@ -4,10 +4,11 @@ import Footer from "../Header/Footer";
 import AboutHistory from "./AboutHistory.js";
 import AboutPartners from "./AboutPartners.js";
 import AboutStaff from "./AboutStaff.js";
+import { LangProvider } from "../Header/LangContext";
 
 const About = ({ staffList }) => {
   return (
-    <>
+    <LangProvider>
       <Header style={"header initialPos"} />
       <div className="about">
         <div className="about__Container">
@@ -36,7 +37,7 @@ const About = ({ staffList }) => {
         </div>
       </div>
       <Footer />
-    </>
+    </LangProvider>
   );
 };
 

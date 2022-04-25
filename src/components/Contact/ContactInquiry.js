@@ -1,117 +1,88 @@
 import Header from "../Header/Header";
 import Footer from "../Header/Footer";
 import { useForm } from "react-hook-form";
+import "./Contact.css";
 
 const ContactInquiry = () => {
   const { register, handleSubmit, errors } = useForm();
 
   const onSubmit = (data) => {
-    const formInfo = `Your Submission: \nName: ${data.name}\nDate of Birth: ${
-      data.birthday
-    }\nGender: ${data.gender} ${
-      data.plan[0].name ? "\nPlan: " + data.plan[0].name : null
-    } ${data.scenario[0].name ? "\nScenario: " + data.scenario[0].name : null}${
-      data.extra[0].name ? "\nAdditional: " + data.extra[0].name : null
-    }\nSummary: ${data.summary}`;
+    const formInfo = `Your Submission: \nCompany: ${data.company}\nName: ${
+      data.name
+    }\nTitle: ${data.title}\nPhone: ${data.phone}\nEmail: ${
+      data.email
+    }\nPartnership Field: ${data.field}${
+      data.attachment[0].name
+        ? "\nAdditional: " + data.attachment[0].name
+        : null
+    }\nData Policy Consent: ${data.consent}`;
     alert(formInfo);
   };
-
   return (
     <>
       <Header style={"header initialPos"} />
       <div className="contact">
         <div className="contact__FormHeader">
-          <h2>Affiliate Inquiry</h2>
+          <h2>partnership inquiry</h2>
         </div>
 
         <div className="contact__FormInfo">
-          <p className="contact__InfoHeader">Submission of documents: </p>
-          <p>Synopsis and script of a proposal or scenario (required) ※</p>
-          <p>Max file size is 10MB. Please compress multiple attachments. ※</p>
           <p>
-            Documents received will be reviewed and responded to individually. ※
+            Interested in becoming a partner in the video production business?
           </p>
+          <p>Please fill out the form below and tell us about your company.</p>
         </div>
 
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="contact__formDiv">
             <div className="contact__FormField">
               <p>
-                <label htmlFor="formType">Proposal or Scenario</label>
+                <label htmlFor="company">Company Name</label>
               </p>
-              <select
-                name="formType"
-                {...register("formType", { required: true })}
-                className="form-select"
-              >
-                <option selected value="select">
-                  Please select an option
-                </option>
-                <option value="proposal">Proposal</option>
-                <option value="scenario">Scenario</option>
-              </select>
+              <input
+                type="text"
+                name="company"
+                className="form-control"
+                {...register("company", { required: true })}
+              />
             </div>
-
             <div className="contact__FormField">
               <p>
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">Your Name</label>
               </p>
               <input
                 type="text"
                 name="name"
+                className="form-control"
                 {...register("name", { required: true })}
+              />
+            </div>
+            <div className="contact__FormField">
+              <p>
+                <label htmlFor="title">Title</label>
+                <p className="contact__Label">
+                  Please enter your title in the company
+                </p>
+              </p>
+              <input
+                type="title"
+                name="name"
+                className="form-control"
+                {...register("title", { required: true })}
               />
             </div>
 
             <div className="contact__FormField">
               <p>
-                <label htmlFor="birthday">Birthday</label>
+                <label htmlFor="phone">Contact Number</label>
               </p>
-
               <input
-                type="date"
-                name="birthday"
-                {...register("birthday", { required: true })}
+                type="phone"
+                name="phone"
+                className="form-control"
+                {...register("phone", { required: true })}
               />
             </div>
-
-            <div className="contact__FormField form-check">
-              <label for="gender">Gender</label>
-              <div className="form-check">
-                <label for="male">Male</label>
-                <input
-                  type="radio"
-                  id="male"
-                  name="gender"
-                  value="Male"
-                  className="form-check-input"
-                  {...register("gender", { required: true })}
-                />
-              </div>
-              <div className="form-check">
-                <label for="female">Female</label>
-                <input
-                  type="radio"
-                  id="female"
-                  name="gender"
-                  value="Female"
-                  className="form-check-input"
-                  {...register("gender", { required: true })}
-                />
-              </div>
-              <div className="form-check">
-                <label for="neutral">Neutral</label>
-                <input
-                  type="radio"
-                  id="neutral"
-                  name="gender"
-                  value="Neutral"
-                  className="form-check-input"
-                  {...register("gender", { required: true })}
-                />
-              </div>
-            </div>
-
             <div className="contact__FormField">
               <p>
                 <label htmlFor="email">Email</label>
@@ -120,58 +91,43 @@ const ContactInquiry = () => {
                 type="email"
                 name="email"
                 className="form-control"
-                placeholder="name@example.com"
                 {...register("email", { required: true })}
               />
             </div>
-
+            <div className="contact__FormField">
+              <p>
+                <label htmlFor="field">Partnership</label>
+                <p className="contact__Label">
+                  Please choose the field you would like to partner with
+                </p>
+              </p>
+              <select
+                name="field"
+                {...register("field", { required: true })}
+                className="form-select"
+              >
+                <option selected value="select">
+                  Please select an option
+                </option>
+                <option value="drama">drama</option>
+                <option value="documentary">documentary</option>
+                <option value="television">television</option>
+                <option value="other">other</option>
+              </select>
+            </div>
             <div className="contact__FormField mb-3">
-              <label for="plan" class="form-label">
-                Plan
+              <label for="attachment" class="form-label">
+                Attachments
               </label>
               <input
                 class="form-control"
                 type="file"
-                id="plan"
-                {...register("plan", { required: false })}
+                name="attachment"
+                {...register("attachment", { required: false })}
               />
-            </div>
-
-            <div className="contact__FormField mb-3">
-              <label for="scenario" class="form-label">
-                Scenario
-              </label>
-              <input
-                class="form-control"
-                type="file"
-                id="scenario"
-                {...register("scenario", { required: false })}
-              />
-            </div>
-
-            <div className="contact__FormField mb-3">
-              <label for="extra" class="form-label">
-                Additional
-              </label>
-              <input
-                class="form-control"
-                type="file"
-                id="extra"
-                {...register("extra", { required: false })}
-              />
-            </div>
-
-            <div className="mb-3 contact__FormField">
-              <label for="exampleFormControlTextarea1" class="form-label">
-                Summary and Extra Information
-              </label>
-              <textarea
-                class="form-control"
-                rows="3"
-                {...register("summary", { required: true })}
-              ></textarea>
             </div>
           </div>
+
           <div className="contact__Data">
             <div className="overflow-auto contact__DataPolicy">
               <p>
@@ -231,6 +187,7 @@ const ContactInquiry = () => {
           </div>
         </form>
       </div>
+
       <Footer />
     </>
   );

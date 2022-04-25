@@ -1,12 +1,15 @@
 import Header from "../Header/Header";
 import Footer from "../Header/Footer";
 import "./Contact.css";
-import { useNavigate } from "react-router-dom";
-
+import { useNavigate, useLocation } from "react-router-dom";
+import { LangProvider, useLang } from "../Header/LangContext";
 const Contact = () => {
+  const lang = useLang();
+  // const state = useLocation();
   const navigate = useNavigate();
+  // console.log(state);
   return (
-    <>
+    <LangProvider>
       <Header style={"header initialPos"} />
       <div className="contact">
         <h1>contact</h1>
@@ -16,7 +19,7 @@ const Contact = () => {
             className="btn btn-secondary btn-lg"
             onClick={() => navigate("/proposal")}
           >
-            Propose a Project
+            {lang ? "프로젝트를 제안해" : "Propose a Project"}
           </button>
           <button
             type="button"
@@ -65,7 +68,7 @@ const Contact = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </LangProvider>
   );
 };
 

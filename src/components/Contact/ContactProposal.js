@@ -1,6 +1,7 @@
 import Header from "../Header/Header";
 import Footer from "../Header/Footer";
 import { useForm } from "react-hook-form";
+import "./Contact.css";
 
 const ContactProposal = () => {
   const { register, handleSubmit, errors } = useForm();
@@ -59,6 +60,7 @@ const ContactProposal = () => {
               <input
                 type="text"
                 name="name"
+                className="form-control"
                 {...register("name", { required: true })}
               />
             </div>
@@ -71,13 +73,16 @@ const ContactProposal = () => {
               <input
                 type="date"
                 name="birthday"
+                className="form-control"
                 {...register("birthday", { required: true })}
               />
             </div>
 
             <div className="contact__FormField form-check">
-              <label for="gender">Gender</label>
-              <div className="form-check">
+              <div className="contact__GenderField">
+                <label for="gender">Gender</label>
+              </div>
+              <div className="form-check form-check-inline">
                 <label for="male">Male</label>
                 <input
                   type="radio"
@@ -88,7 +93,7 @@ const ContactProposal = () => {
                   {...register("gender", { required: true })}
                 />
               </div>
-              <div className="form-check">
+              <div className="form-check form-check-inline">
                 <label for="female">Female</label>
                 <input
                   type="radio"
@@ -99,7 +104,7 @@ const ContactProposal = () => {
                   {...register("gender", { required: true })}
                 />
               </div>
-              <div className="form-check">
+              <div className="form-check form-check-inline">
                 <label for="neutral">Neutral</label>
                 <input
                   type="radio"
@@ -126,11 +131,9 @@ const ContactProposal = () => {
             </div>
 
             <div className="contact__FormField mb-3">
-              <label for="plan" class="form-label">
-                Plan
-              </label>
+              <label for="plan">Plan</label>
               <input
-                class="form-control"
+                className="form-control"
                 type="file"
                 id="plan"
                 {...register("plan", { required: false })}

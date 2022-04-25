@@ -1,14 +1,12 @@
 import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
 import { useState } from "react";
+import { useLang, useLangUpdate } from "./LangContext";
 
 const Header = ({ style }) => {
   const headerStyle = style;
-
-  const [langDefault, setLangDefault] = useState(true);
-  const changeLang = () => {
-    langDefault ? setLangDefault(false) : setLangDefault(true);
-  };
+  const lang = useLang();
+  const toggleLang = useLangUpdate();
   const navigate = useNavigate();
 
   let flags = {
@@ -24,9 +22,11 @@ const Header = ({ style }) => {
     },
   };
 
-  let currLang = langDefault ? flags.usflag.name : flags.krflag.name;
-  let enFlag = langDefault ? flags.usflag.color_url : flags.usflag.grey_url;
-  let krFlag = langDefault ? flags.krflag.grey_url : flags.krflag.color_url;
+  let koText = lang ? "" : ".header__GreyText";
+  let enText = lang ? ".header__GreyText" : "";
+  let currLang = lang ? flags.krflag.name : flags.usflag.name;
+  let krFlag = lang ? flags.krflag.color_url : flags.krflag.grey_url;
+  let enFlag = lang ? flags.usflag.grey_url : flags.usflag.color_url;
 
   return (
     <>
@@ -38,34 +38,45 @@ const Header = ({ style }) => {
             onClick={() => navigate("/")}
           ></img>
           <div className="header__Lang">
-            <p>{currLang}</p>
             <div className="header__LangImages">
-              <img
-                src={enFlag}
-                alt="eng"
-                onClick={() => (langDefault ? "" : changeLang())}
-              />
-              <img
-                src={krFlag}
-                alt="한국어"
-                onClick={() => (langDefault ? changeLang() : "")}
-              />
+              <div
+                className="header__Toggle"
+                onClick={lang ? null : toggleLang}
+              >
+                <p className={koText}>KO</p>
+                <img src={krFlag} alt="한국어" />
+              </div>
+              <div
+                className="header__Toggle"
+                onClick={lang ? toggleLang : null}
+              >
+                <p className={enText}>EN</p>
+                <img src={enFlag} alt="eng" />
+              </div>
             </div>
           </div>
         </div>
 
         <nav className="header__nav">
-          <Link to="/media" className="header__Btn header__blueBtn">
-            our media
+          <Link
+            to="/media"
+            className="header__Btn header__blueBtn"
+            state={{ lang: lang }}
+          >
+            {lang ? "우리 매체" : "our media"}
           </Link>
           <Link to="/news" className="header__Btn header__orangeBtn">
-            latest news
+            {lang ? "최신 뉴스" : "latest news"}
           </Link>
           <Link to="/about" className=" header__Btn header__greenBtn">
-            about imtv
+            {lang ? "imtv 회사 개요" : "about imtv"}
           </Link>
-          <Link to="/contact" className=" header__Btn header__pinkBtn">
-            contact us
+          <Link
+            to="/contact"
+            state={{ lang }}
+            className=" header__Btn header__pinkBtn"
+          >
+            {lang ? "연락" : "contact us"}
           </Link>
         </nav>
       </div>

@@ -12,6 +12,10 @@
   margin: 1%;
 }
 
+.contact__Label {
+  font-size: 0.9vw;
+}
+
 .contact__Buttons {
   width: 60%;
   display: flex;
@@ -54,6 +58,10 @@
 .contact__FormField {
   padding: 2%;
   width: 60%;
+}
+
+.contact__GenderField {
+  padding-bottom: 2%;
 }
 
 .contact__FormHeader {

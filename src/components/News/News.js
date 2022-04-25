@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import NewsCards from "./NewsCards";
 import NewsPagination from "./NewsPagination";
+import { LangProvider } from "../Header/LangContext";
 
 const News = ({ list }) => {
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ const News = ({ list }) => {
   const currentPosts = list.slice(indexOfFirstPost, indexOfLastPost);
 
   return (
-    <>
+    <LangProvider>
       <Header style={"header initialPos"} />
       <div className="news">
         <h1>최신 뉴스</h1>
@@ -30,7 +31,7 @@ const News = ({ list }) => {
         />
       </div>
       <Footer />
-    </>
+    </LangProvider>
   );
 };
 

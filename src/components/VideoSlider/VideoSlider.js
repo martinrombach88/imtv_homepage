@@ -3,10 +3,13 @@ import "bootstrap/dist/css/bootstrap.css";
 import ReactPlayer from "react-player";
 import { Carousel } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import { useLang } from "../Header/LangContext";
 
 const VideoSlider = ({ mediaList }) => {
+  const lang = useLang();
   const navigate = useNavigate();
   const sliderVids = mediaList;
+
   return (
     <div className="carousel__Container">
       <Carousel>
@@ -24,7 +27,7 @@ const VideoSlider = ({ mediaList }) => {
                 height="100%"
               />
               <Carousel.Caption bsPrefix="carousel__Details">
-                <h4>{sliderVid.title}</h4>
+                <h4>{lang ? sliderVid.title : sliderVid.titleENG}</h4>
               </Carousel.Caption>
             </Carousel.Item>
           );

@@ -53,7 +53,6 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-
   padding: 0;
   margin: 0 5%;
 }
@@ -67,7 +66,7 @@
   cursor: pointer;
   object-fit: cover;
   box-sizing: border-box;
-  width: 40%;
+  width: 80%;
 }
 
 .header__Lang img:hover {
@@ -100,8 +99,17 @@
   color: white;
 }
 
+.header__GreyText {
+  color: rgb(81, 81, 81);
+}
+
 .header__Btn:active,
 .header__logo:active,
-.header__LangImages img:active {
+.header__LangImages img:active,
+.header__Toggle:active {
   transform: translateY(10%);
+}
+
+.header__Toggle {
+  cursor: pointer;
 }
