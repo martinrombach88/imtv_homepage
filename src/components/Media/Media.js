@@ -6,7 +6,7 @@ import { LangProvider } from "../Header/LangContext";
 const Media = ({ mediaList }) => {
   return (
     <LangProvider>
-      <Header style={"header initialPos"} />
+      <Header headerStyle={"header initialPos"} />
       {mediaList.map((media, index) => {
         return <MediaItem media={media} key={index} />;
       })}

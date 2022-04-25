@@ -20,7 +20,7 @@ const News = ({ list }) => {
 
   return (
     <LangProvider>
-      <Header style={"header initialPos"} />
+      <Header headerStyle={"header initialPos"} />
       <div className="news">
         <h1>최신 뉴스</h1>
         <NewsCards currentPosts={currentPosts} />
