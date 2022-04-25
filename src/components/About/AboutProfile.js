@@ -8,8 +8,8 @@ const AboutProfile = () => {
     ? state.image
     : "/assets/images/staff/placeholder.jpg";
 
-  const list = state.infoENG.map((info) => {
-    return <li>{info}</li>;
+  const list = state.infoENG.map((info, index) => {
+    return <li key={index}>{info}</li>;
   });
   return (
     <>
