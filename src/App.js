@@ -21,11 +21,11 @@ import { LangProvider } from "./components/Header/LangContext";
 
 function Home() {
   return (
-    <LangProvider>
+    <>
       <Header headerStyle={"header"} />
       <VideoSlider mediaList={mediaList} />
       <Footer />
-    </LangProvider>
+    </>
   );
 }
 

@@ -4,7 +4,7 @@ import "./News.css";
 import { useState } from "react";
 import NewsCards from "./NewsCards";
 import NewsPagination from "./NewsPagination";
-import { LangProvider } from "../Header/LangContext";
+import { useLang } from "../Header/LangContext";
 
 const News = ({ list }) => {
   //Pagination
@@ -14,12 +14,12 @@ const News = ({ list }) => {
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = list.slice(indexOfFirstPost, indexOfLastPost);
-
+  const lang = useLang();
   return (
-    <LangProvider>
+    <>
       <Header headerStyle={"header initialPos"} />
       <div className="news">
-        <h1>최신 뉴스</h1>
+        <h1>{lang ? "최신 뉴스" : "latest news"}</h1>
         <NewsCards currentPosts={currentPosts} />
         <NewsPagination
           postsPerPage={postsPerPage}
@@ -28,7 +28,7 @@ const News = ({ list }) => {
         />
       </div>
       <Footer />
-    </LangProvider>
+    </>
   );
 };
 
