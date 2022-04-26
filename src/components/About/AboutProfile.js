@@ -6,9 +6,6 @@ const AboutProfile = () => {
   const lang = useLang();
   const { state } = useLocation();
   const navigate = useNavigate();
-  const heading = lang
-    ? state.titleKR + " " + state.nameKR
-    : state.titleENG + " " + state.nameENG;
   const src = state.image
     ? state.image
     : "/assets/images/staff/placeholder.jpg";
