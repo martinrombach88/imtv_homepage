@@ -35,9 +35,9 @@ const AboutProfile = () => {
           <div className="about__ProfileInfo">
             <div className="about__ProfileTitle">
               <h3>
-                {lang ? state.titleKR : state.titleENG}
-                {"  "}
-                {lang ? state.titleKR : state.nameENG}
+                {lang
+                  ? state.titleKR + " " + state.nameKR
+                  : state.titleENG + " " + state.nameENG}
               </h3>
               <h3></h3>
             </div>
