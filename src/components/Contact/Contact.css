@@ -29,21 +29,17 @@
   align-items: center;
 }
 
-.contact__DetailsENG,
-.contact__DetailsKR {
+.contact__Details {
   display: flex;
   width: 80%;
 }
 
-.contact__DetailsENG h5,
-.contact__DetailsKR h5 {
+.contact__Detailsh5 {
   padding: 2%;
 }
 
-.contact__AddressENG,
-.contact__AddressKR,
-.contact__DirectionsENG,
-.contact__DirectionsKR {
+.contact__Address,
+.contact__Directions {
   width: 50%;
 }
 

@@ -13,11 +13,8 @@ const AboutPartners = () => {
   const renderedImages = generateImages(41);
 
   return (
-    <div className="about__Partners">
-      <h1>partners</h1>
-      <div className="about__PartnersCycler">
-        <div>{renderedImages}</div>
-      </div>
+    <div className="about__PartnersCycler">
+      <div>{renderedImages}</div>
     </div>
   );
 };

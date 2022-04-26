@@ -1,16 +1,22 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import Header from "../Header/Header";
+import { useLang } from "../Header/LangContext";
 
 const AboutProfile = () => {
+  const lang = useLang();
   const { state } = useLocation();
   const navigate = useNavigate();
   const src = state.image
     ? state.image
     : "/assets/images/staff/placeholder.jpg";
 
-  const list = state.infoENG.map((info, index) => {
-    return <li key={index}>{info}</li>;
-  });
+  const list = lang
+    ? state.infoKR.map((info, index) => {
+        return <li key={index}>{info}</li>;
+      })
+    : state.infoENG.map((info, index) => {
+        return <li key={index}>{info}</li>;
+      });
   return (
     <>
       <Header headerStyle={"header initialPos"} />
@@ -29,8 +35,11 @@ const AboutProfile = () => {
           <div className="about__ProfileInfo">
             <div className="about__ProfileTitle">
               <h3>
-                {state.titleENG} {state.nameENG}
+                {lang ? state.titleKR : state.titleENG}
+                {"  "}
+                {lang ? state.titleKR : state.nameENG}
               </h3>
+              <h3></h3>
             </div>
             <ul>{list}</ul>
           </div>

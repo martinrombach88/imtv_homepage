@@ -1,6 +1,9 @@
 import { useNavigate } from "react-router-dom";
+import { useLang } from "../Header/LangContext";
 
 const AboutStaffMember = ({ staffMember }) => {
+  const lang = useLang();
+
   const src = staffMember.image
     ? staffMember.image
     : "/assets/images/staff/placeholder.jpg";
@@ -11,11 +14,11 @@ const AboutStaffMember = ({ staffMember }) => {
         <img
           className="about__StaffIcon"
           src={src}
-          alt={staffMember.titleENG}
+          alt={lang ? staffMember.titleKR : staffMember.titleENG}
         />
         <div className="about__StaffTitle">
-          <h5>{staffMember.titleENG}</h5>
-          <h5>{staffMember.nameENG}</h5>
+          <h5>{lang ? staffMember.titleKR : staffMember.titleENG}</h5>
+          <h5>{lang ? staffMember.nameKR : staffMember.nameENG}</h5>
         </div>
 
         <div className="about__Info">
