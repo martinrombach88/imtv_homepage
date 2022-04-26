@@ -1,9 +1,12 @@
 import Header from "../Header/Header";
 import Footer from "../Header/Footer";
+import ContactConsent from "./ContactConsent";
 import { useForm } from "react-hook-form";
+import { useLang } from "../Header/LangContext";
 import "./Contact.css";
 
 const ContactInquiry = () => {
+  const lang = useLang();
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
@@ -23,21 +26,29 @@ const ContactInquiry = () => {
       <Header headerStyle={"header initialPos"} />
       <div className="contact">
         <div className="contact__FormHeader">
-          <h2>partnership inquiry</h2>
+          <h2>{lang ? "파트너십 문의" : "partnership inquiry"}</h2>
         </div>
 
         <div className="contact__FormInfo">
           <p>
-            Interested in becoming a partner in the video production business?
+            {lang
+              ? "비디오 제작 비즈니스의 파트너가 되고 싶으십니까?"
+              : "Interested in becoming a partner in the video production business?"}
           </p>
-          <p>Please fill out the form below and tell us about your company.</p>
+          <p>
+            {lang
+              ? "아래 양식을 작성하고 회사에 대해 알려주십시오."
+              : "Please fill out the form below and tell us about your company."}
+          </p>
         </div>
 
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="contact__formDiv">
             <div className="contact__FormField">
               <p>
-                <label htmlFor="company">Company Name</label>
+                <label htmlFor="company">
+                  {lang ? "회사 이름." : "Company Name"}
+                </label>
               </p>
               <input
                 type="text"
@@ -48,7 +59,7 @@ const ContactInquiry = () => {
             </div>
             <div className="contact__FormField">
               <p>
-                <label htmlFor="name">Your Name</label>
+                <label htmlFor="name">{lang ? "성함." : "YourName"}</label>
               </p>
               <input
                 type="text"
@@ -59,10 +70,12 @@ const ContactInquiry = () => {
             </div>
             <div className="contact__FormField">
               <p>
-                <label htmlFor="title">Title</label>
+                <label htmlFor="title">{lang ? "제목" : "title"}</label>
               </p>
               <p className="contact__Label">
-                Please enter your title in the company
+                {lang
+                  ? "회사 내 직위를 입력하세요."
+                  : "Please enter your title in the company"}
               </p>
               <input
                 type="title"
@@ -74,7 +87,9 @@ const ContactInquiry = () => {
 
             <div className="contact__FormField">
               <p>
-                <label htmlFor="phone">Contact Number</label>
+                <label htmlFor="phone">
+                  {lang ? "연락처" : "Contact Number"}
+                </label>
               </p>
               <input
                 type="phone"
@@ -85,7 +100,7 @@ const ContactInquiry = () => {
             </div>
             <div className="contact__FormField">
               <p>
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">{lang ? "이메일" : "Email"}</label>
               </p>
               <input
                 type="email"
@@ -96,10 +111,14 @@ const ContactInquiry = () => {
             </div>
             <div className="contact__FormField">
               <p>
-                <label htmlFor="field">Partnership</label>
+                <label htmlFor="field">
+                  {lang ? "협력 관계" : "Partnership"}
+                </label>
               </p>
               <p className="contact__Label">
-                Please choose the field you would like to partner with
+                {lang
+                  ? "파트너가 되고 싶은 분야를 선택하세요."
+                  : "Please choose the field you would like to partner with"}
               </p>
               <select
                 name="field"
@@ -107,17 +126,21 @@ const ContactInquiry = () => {
                 className="form-select"
               >
                 <option selected value="select">
-                  Please select an option
+                  {lang ? "옵션을 선택해주세요" : "Please select an option"}
                 </option>
-                <option value="drama">drama</option>
-                <option value="documentary">documentary</option>
-                <option value="television">television</option>
-                <option value="other">other</option>
+                <option value="drama">{lang ? "드라마" : "drama"}</option>
+                <option value="documentary">
+                  {lang ? "다큐멘터리" : "documentary"}
+                </option>
+                <option value="television">
+                  {lang ? "테레비전" : "television"}
+                </option>
+                <option value="other">{lang ? "다른" : "other"}</option>
               </select>
             </div>
             <div className="contact__FormField mb-3">
               <label for="attachment" class="form-label">
-                Attachments
+                s {lang ? "첨부 파일입니다." : " Attachment"}
               </label>
               <input
                 class="form-control"
@@ -130,36 +153,7 @@ const ContactInquiry = () => {
 
           <div className="contact__Data">
             <div className="overflow-auto contact__DataPolicy">
-              <p>
-                Consent to allow collection and use of personal information:
-              </p>
-              <p>
-                In accordance with Articles 15 and 17 of the Personal
-                Information Protection Act, I submit a proposal/scenario to IMTV
-                and I agree to the collection and use of provided personal
-                information with the contents below.
-              </p>
-              <p>Personal information items that we collect: </p>
-              <p>
-                IMTV Co., Ltd. is collecting the following personal information
-                to receive planning proposals/scenarios. - Collection items:
-                name, date of birth, gender, contact information, e-mail,
-                service usage history, access log, cookie, access IP information
-                - Personal information collection method: homepage
-              </p>
-              <p>
-                ■ Purpose of collecting and using personal information IMTV Co.,
-                Ltd. utilizes the collected personal information for the
-                following purposes. - There is no use of information other than
-                consultation for planning/scenario review.
-              </p>
-              <p>
-                ■ Period of storage and use of personal information - Your
-                personal information will be kept as follows, and if the purpose
-                of collection, use, and provision is achieved, it will be
-                processed in accordance with Article 21 of the Personal
-                Information Protection Act.
-              </p>
+              <ContactConsent />
             </div>
             <div className="form-check">
               <input
@@ -172,7 +166,9 @@ const ContactInquiry = () => {
               />
 
               <label className="form-check-label" for="flexCheckDefault">
-                I agree to the collection and use of personal information.
+                {lang
+                  ? "개인정보 수집 및 이용에 동의합니다."
+                  : "I agree to the collection and use of personal information."}
               </label>
             </div>
           </div>
@@ -181,7 +177,7 @@ const ContactInquiry = () => {
               <input
                 className="btn btn-secondary"
                 type="submit"
-                value="Submit"
+                value={lang ? "제출해요" : "Submit"}
               />
             </div>
           </div>

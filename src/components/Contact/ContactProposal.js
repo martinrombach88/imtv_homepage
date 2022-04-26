@@ -1,9 +1,12 @@
 import Header from "../Header/Header";
 import Footer from "../Header/Footer";
+import ContactConsent from "./ContactConsent";
 import { useForm } from "react-hook-form";
 import "./Contact.css";
+import { useLang } from "../Header/LangContext";
 
 const ContactProposal = () => {
+  const lang = useLang();
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
@@ -22,15 +25,29 @@ const ContactProposal = () => {
       <Header headerStyle={"header initialPos"} />
       <div className="contact">
         <div className="contact__FormHeader">
-          <h2>project proposal / scenario</h2>
+          <h2>
+            {lang ? "프로젝트 제안/시나리오" : "project proposal / scenario"}
+          </h2>
         </div>
 
         <div className="contact__FormInfo">
-          <p className="contact__InfoHeader">Submission of documents: </p>
-          <p>Synopsis and script of a proposal or scenario (required) ※</p>
-          <p>Max file size is 10MB. Please compress multiple attachments. ※</p>
+          <p className="contact__InfoHeader">
+            {lang ? "문서 제출:" : "Submission of documents:"}
+          </p>
           <p>
-            Documents received will be reviewed and responded to individually. ※
+            {lang
+              ? "제안 또는 시나리오의 시놉시스 및 대본(필수) ※"
+              : "Synopsis and script of a proposal or scenario (required) ※"}
+          </p>
+          <p>
+            {lang
+              ? "최대 파일 크기는 10MB입니다. 여러 첨부 파일을 압축하십시오. ※"
+              : "Max file size is 10MB. Please compress multiple attachments. ※"}
+          </p>
+          <p>
+            {lang
+              ? "접수된 서류는 개별적으로 검토 후 회신드리겠습니다. ※"
+              : "Documents received will be reviewed and responded to individually. ※"}
           </p>
         </div>
 
@@ -38,7 +55,9 @@ const ContactProposal = () => {
           <div className="contact__formDiv">
             <div className="contact__FormField">
               <p>
-                <label htmlFor="formType">Proposal or Scenario</label>
+                <label htmlFor="formType">
+                  {lang ? "제안 또는 시나리오입니다." : "Proposal or Scenario"}
+                </label>
               </p>
               <select
                 name="formType"
@@ -46,16 +65,18 @@ const ContactProposal = () => {
                 className="form-select"
               >
                 <option selected value="select">
-                  Please select an option
+                  {lang ? "옵션을 선택하십시오." : "Please select an option"}
                 </option>
-                <option value="proposal">Proposal</option>
-                <option value="scenario">Scenario</option>
+                <option value="proposal">{lang ? "제안." : "Proposal"}</option>
+                <option value="scenario">
+                  {lang ? "시나리오." : "Scenario"}
+                </option>
               </select>
             </div>
 
             <div className="contact__FormField">
               <p>
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">{lang ? "성함." : "Name"}</label>
               </p>
               <input
                 type="text"
@@ -67,7 +88,7 @@ const ContactProposal = () => {
 
             <div className="contact__FormField">
               <p>
-                <label htmlFor="birthday">Birthday</label>
+                <label htmlFor="birthday"> {lang ? "생신." : "Birthday"}</label>
               </p>
 
               <input
@@ -80,10 +101,10 @@ const ContactProposal = () => {
 
             <div className="contact__FormField form-check">
               <div className="contact__GenderField">
-                <label htmlFor="gender">Gender</label>
+                <label htmlFor="gender">{lang ? "성별" : "Gender"}</label>
               </div>
               <div className="form-check form-check-inline">
-                <label htmlFor="male">Male</label>
+                <label htmlFor="male">{lang ? "남자" : "male"}</label>
                 <input
                   type="radio"
                   id="male"
@@ -94,7 +115,7 @@ const ContactProposal = () => {
                 />
               </div>
               <div className="form-check form-check-inline">
-                <label htmlFor="female">Female</label>
+                <label htmlFor="female">{lang ? "여자" : "female"}</label>
                 <input
                   type="radio"
                   id="female"
@@ -105,7 +126,7 @@ const ContactProposal = () => {
                 />
               </div>
               <div className="form-check form-check-inline">
-                <label htmlFor="neutral">Neutral</label>
+                <label htmlFor="neutral">{lang ? "중립적인" : "neutral"}</label>
                 <input
                   type="radio"
                   id="neutral"
@@ -119,7 +140,7 @@ const ContactProposal = () => {
 
             <div className="contact__FormField">
               <p>
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email"> {lang ? "이메일" : "Email"}</label>
               </p>
               <input
                 type="email"
@@ -131,7 +152,7 @@ const ContactProposal = () => {
             </div>
 
             <div className="contact__FormField mb-3">
-              <label htmlFor="plan">Plan</label>
+              <label htmlFor="plan">{lang ? "계획" : "Plan"}</label>
               <input
                 className="form-control"
                 type="file"
@@ -142,7 +163,7 @@ const ContactProposal = () => {
 
             <div className="contact__FormField mb-3">
               <label htmlFor="scenario" class="form-label">
-                Scenario
+                {lang ? "시나리오" : "Scenario"}
               </label>
               <input
                 class="form-control"
@@ -154,7 +175,7 @@ const ContactProposal = () => {
 
             <div className="contact__FormField mb-3">
               <label htmlFor="extra" class="form-label">
-                Additional
+                {lang ? "추가의" : "Additional"}
               </label>
               <input
                 class="form-control"
@@ -166,7 +187,9 @@ const ContactProposal = () => {
 
             <div className="mb-3 contact__FormField">
               <label htmlFor="exampleFormControlTextarea1" class="form-label">
-                Summary and Extra Information
+                {lang
+                  ? "요약 및 추가 정보입니다."
+                  : "Summary and Extra Information"}
               </label>
               <textarea
                 className="form-control"
@@ -177,36 +200,7 @@ const ContactProposal = () => {
           </div>
           <div className="contact__Data">
             <div className="overflow-auto contact__DataPolicy">
-              <p>
-                Consent to allow collection and use of personal information:
-              </p>
-              <p>
-                In accordance with Articles 15 and 17 of the Personal
-                Information Protection Act, I submit a proposal/scenario to IMTV
-                and I agree to the collection and use of provided personal
-                information with the contents below.
-              </p>
-              <p>Personal information items that we collect: </p>
-              <p>
-                IMTV Co., Ltd. is collecting the following personal information
-                to receive planning proposals/scenarios. - Collection items:
-                name, date of birth, gender, contact information, e-mail,
-                service usage history, access log, cookie, access IP information
-                - Personal information collection method: homepage
-              </p>
-              <p>
-                ■ Purpose of collecting and using personal information IMTV Co.,
-                Ltd. utilizes the collected personal information for the
-                following purposes. - There is no use of information other than
-                consultation for planning/scenario review.
-              </p>
-              <p>
-                ■ Period of storage and use of personal information - Your
-                personal information will be kept as follows, and if the purpose
-                of collection, use, and provision is achieved, it will be
-                processed in accordance with Article 21 of the Personal
-                Information Protection Act.
-              </p>
+              <ContactConsent />
             </div>
             <div className="form-check">
               <input
@@ -219,7 +213,9 @@ const ContactProposal = () => {
               />
 
               <label className="form-check-label" for="flexCheckDefault">
-                I agree to the collection and use of personal information.
+                {lang
+                  ? "개인정보 수집 및 이용에 동의합니다."
+                  : "I agree to the collection and use of personal information."}
               </label>
             </div>
           </div>
@@ -228,7 +224,7 @@ const ContactProposal = () => {
               <input
                 className="btn btn-secondary"
                 type="submit"
-                value="Submit"
+                value={lang ? "제출해요" : "Submit"}
               />
             </div>
           </div>

@@ -9,7 +9,7 @@ const AboutStaffMember = ({ staffMember }) => {
     : "/assets/images/staff/placeholder.jpg";
   const navigate = useNavigate();
   return (
-    <div className="about__StaffMember">
+    <div className="about__StaffMember" key={staffMember.index}>
       <div>
         <img
           className="about__StaffIcon"

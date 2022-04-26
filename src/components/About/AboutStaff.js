@@ -5,7 +5,7 @@ const AboutStaff = ({ staffList }) => {
     if (member.titleENG !== "CEO") {
       return <AboutStaffMember key={index} staffMember={member} />;
     } else {
-      return <></>;
+      return null;
     }
   });
 
