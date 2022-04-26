@@ -6,6 +6,9 @@ const AboutProfile = () => {
   const lang = useLang();
   const { state } = useLocation();
   const navigate = useNavigate();
+  const heading = lang
+    ? state.titleKR + " " + state.nameKR
+    : state.titleENG + " " + state.nameENG;
   const src = state.image
     ? state.image
     : "/assets/images/staff/placeholder.jpg";
@@ -39,7 +42,6 @@ const AboutProfile = () => {
                   ? state.titleKR + " " + state.nameKR
                   : state.titleENG + " " + state.nameENG}
               </h3>
-              <h3></h3>
             </div>
             <ul>{list}</ul>
           </div>
