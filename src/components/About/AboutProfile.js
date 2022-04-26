@@ -9,7 +9,7 @@ const AboutProfile = () => {
   const src = state.image
     ? state.image
     : "/assets/images/staff/placeholder.jpg";
-
+  console.log(state.titleKR);
   const list = lang
     ? state.infoKR.map((info, index) => {
         return <li key={index}>{info}</li>;
