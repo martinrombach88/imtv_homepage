@@ -27,7 +27,7 @@ const VideoSlider = ({ mediaList }) => {
                 height="100%"
               />
               <Carousel.Caption bsPrefix="carousel__Details">
-                <h4>{lang ? sliderVid.title : sliderVid.titleENG}</h4>
+                <h4>{lang ? sliderVid.titleKR : sliderVid.titleENG}</h4>
               </Carousel.Caption>
             </Carousel.Item>
           );

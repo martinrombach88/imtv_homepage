@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      <p>{footerText}</p>
+      {/* <p>{footerText}</p> */}
       <p>Copyright IMTV All Rights Reserved</p>
     </div>
   );

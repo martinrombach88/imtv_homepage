@@ -26,10 +26,10 @@ const About = ({ staffList }) => {
             <AboutPartners />
           </div>
         </div>
-        <div className="about__CompanyContainer">
+        {/* <div className="about__CompanyContainer">
           <h1>{lang ? "20년의 생산" : "twenty years of production"}</h1>
           <AboutHistory />
-        </div>
+        </div> */}
         <div className="about__StaffContainer">
           <h1>{lang ? "핵심 팀" : "key team"}</h1>
           <AboutStaff staffList={staffList} />

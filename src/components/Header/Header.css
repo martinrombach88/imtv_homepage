@@ -1,12 +1,13 @@
 .header {
   position: fixed;
   z-index: 3;
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2% 1% 2% 1%;
+  font-size: 14px;
+  width: 100%;
+  padding: 1% 0%;
 }
 
 .footer,
@@ -20,9 +21,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
-  margin: 0;
-  padding: 0.5%;
+  height: 10vh;
 }
 .footer p {
   margin: 0;
@@ -32,41 +31,22 @@
   position: initial;
 }
 
-.header__nav {
-  display: flex;
-  justify-content: space-around;
-  width: 50%;
-}
-
-.header__Left {
-  display: flex;
-  width: 40%;
-}
-
 .header__logo {
-  margin-left: 1%;
   cursor: pointer;
-  width: 25%;
+  display: flex;
+  padding-left: 10%;
+  width: 80%;
+}
+.header__Nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .header__Lang {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 0;
-  margin: 0 5%;
-}
-
-.header__LangImages {
-  display: flex;
-  justify-content: space-around;
-}
-
-.header__Lang img {
   cursor: pointer;
-  object-fit: cover;
-  box-sizing: border-box;
-  width: 80%;
+  margin-right: 1%;
 }
 
 .header__Lang img:hover {
@@ -75,39 +55,37 @@
 }
 
 .header__Btn {
-  font-size: 1.5em;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-}
-
-.header__blueBtn {
-  color: rgb(53, 218, 253);
-}
-
-.header__orangeBtn {
-  color: rgb(255, 184, 129);
-}
-.header__greenBtn {
-  color: rgb(128, 236, 126);
-}
-.header__pinkBtn {
-  color: rgb(255, 123, 253);
-}
-
-.header__Btn:hover {
   color: white;
 }
 
-.header__GreyText {
-  color: rgb(81, 81, 81);
+.header__Btn:hover {
+  color: rgb(185, 185, 185);
+}
+
+.header__Active,
+.header__Inactive,
+.header__LangDivider {
+  padding: 5px;
+}
+
+.header__Active {
+  color: white;
+  border-bottom: 1px white solid;
+}
+
+.header__Inactive {
+  color: rgb(185, 185, 185);
+  border-bottom: 1px rgb(0, 0, 0) solid;
 }
 
 .header__Btn:active,
 .header__logo:active,
 .header__LangImages img:active,
 .header__Toggle:active {
-  transform: translateY(10%);
+  transform: translateY(5%);
 }
 
 .header__Toggle {
