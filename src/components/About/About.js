@@ -17,7 +17,8 @@ const About = ({ staffList }) => {
       <div className="about">
         <div className="about__Container">
           <div className="about__Intro">
-            <h1>{lang ? "imtv에 대해" : "about imtv"}</h1>
+            {/* {lang ? "imtv에 대해" : "about imtv"} */}
+            <h1>ABOUT IMTV</h1>
             <h5>{aboutText}</h5>
           </div>
         </div>
@@ -27,8 +28,7 @@ const About = ({ staffList }) => {
             <AboutPartners />
           </div>
         </div>
-
-        <div className="about__StaffContainer">
+        {/* <div className="about__StaffContainer">
           <h1>{lang ? "핵심 팀" : "key team"}</h1>
           <AboutStaff staffList={staffList} />
           <p className="about__StaffWebDev">
@@ -36,7 +36,7 @@ const About = ({ staffList }) => {
               ? "롬박 마틴은 개발한 웹사이트가 개발되었습니다."
               : "Website developed by Martin Rombach"}
           </p>
-        </div>
+        </div> */}
       </div>
       <Footer />
     </>
