@@ -16,7 +16,7 @@ const News = ({ list }) => {
   const currentPosts = list.slice(indexOfFirstPost, indexOfLastPost);
   const lang = useLang();
   return (
-    <>
+    <div className="scroll">
       <Header headerStyle={"header initialPos"} />
       <div className="news">
         <h1>{lang ? "최신 뉴스" : "latest news"}</h1>
@@ -28,7 +28,7 @@ const News = ({ list }) => {
         />
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

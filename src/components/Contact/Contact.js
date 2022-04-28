@@ -43,7 +43,7 @@ const Contact = () => {
   );
   let contactDetails = lang ? contactDetailsKR : contactDetailsENG;
   return (
-    <>
+    <div className="scroll">
       <Header headerStyle={"header initialPos"} />
       <div className="contact">
         <h1>contact</h1>
@@ -78,7 +78,7 @@ const Contact = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
