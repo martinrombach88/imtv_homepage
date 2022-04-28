@@ -54,7 +54,7 @@ const Header = ({ headerStyle }) => {
           ABOUT
           {/* {lang ? "imtv 회사 개요" : "ABOUT"} */}
         </Link>
-        <Link to="/about" className=" header__Btn header__greenBtn">
+        <Link to="/history" className=" header__Btn header__greenBtn">
           HISTORY
           {/* {lang ? "imtv 회사 개요" : "HISTORY"} */}
         </Link>

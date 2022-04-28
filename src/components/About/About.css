@@ -29,8 +29,6 @@
   margin: 1%;
   overflow: hidden;
   flex-wrap: wrap;
-  width: 80%;
-  height: 45%;
   background-color: white;
   border-radius: 8%;
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
@@ -38,13 +36,13 @@
 
 .about__PartnersCycler div {
   --animation: slide;
-  animation: var(--animation, none) 200s infinite linear;
-  height: 420%;
+  animation: var(--animation, none) 40s infinite linear;
+  height: 230%;
 }
 
 .about__Partners img {
   object-fit: contain;
-  width: 50%;
+  width: 25%;
   transition: opacity 0.2s;
 }
 
@@ -53,7 +51,7 @@
     transform: translateY(10%);
   }
   50% {
-    transform: translateY(-370%);
+    transform: translateY(-230%);
   }
   100% {
     transform: translateY(10%);

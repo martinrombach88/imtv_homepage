@@ -9,6 +9,7 @@ import News from "./components/News/News.js";
 import NewsArticleView from "./components/News/NewsArticleView.js";
 import About from "./components/About/About.js";
 import AboutProfile from "./components/About/AboutProfile.js";
+import History from "./components/History/History.js";
 import Contact from "./components/Contact/Contact.js";
 import ContactProposal from "./components/Contact/ContactProposal.js";
 import ContactInquiry from "./components/Contact/ContactInquiry.js";
@@ -37,6 +38,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="media" element={<Media mediaList={mediaList} />} />
           <Route path="about" element={<About staffList={staffList} />} />
+          <Route path="history" element={<History />} />
           <Route path="news" element={<News list={newsList} />} />
           <Route path="news_article" element={<NewsArticleView />} />
           <Route path="contact" element={<Contact />} />

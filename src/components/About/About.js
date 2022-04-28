@@ -1,7 +1,6 @@
 import "./About.css";
 import Header from "../Header/Header";
 import Footer from "../Header/Footer";
-import AboutHistory from "./AboutHistory.js";
 import AboutPartners from "./AboutPartners.js";
 import AboutStaff from "./AboutStaff.js";
 import { useLang } from "../Header/LangContext";
@@ -21,15 +20,14 @@ const About = ({ staffList }) => {
             <h1>{lang ? "imtv에 대해" : "about imtv"}</h1>
             <h5>{aboutText}</h5>
           </div>
+        </div>
+        <div className="about__Container">
           <div className="about__Partners">
             <h1>{lang ? "파트너" : "partners"}</h1>
             <AboutPartners />
           </div>
         </div>
-        {/* <div className="about__CompanyContainer">
-          <h1>{lang ? "20년의 생산" : "twenty years of production"}</h1>
-          <AboutHistory />
-        </div> */}
+
         <div className="about__StaffContainer">
           <h1>{lang ? "핵심 팀" : "key team"}</h1>
           <AboutStaff staffList={staffList} />
