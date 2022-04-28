@@ -1,0 +1,36 @@
+.scrollSnap {
+  max-height: 100vh;
+  overflow-y: scroll;
+  border: 1px solid gray;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(3rem);
+  scroll-snap-type: y mandatory;
+}
+
+.homesnap {
+  background-color: rgb(244, 246, 248);
+  color: black;
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 4%;
+  display: flex;
+}
+
+.homesnap__ImageContainer,
+.homesnap__Content {
+  width: 50%;
+}
+
+.homesnap__Image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.homesnap__Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

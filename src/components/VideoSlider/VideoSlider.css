@@ -1,12 +1,14 @@
 .carousel__Container {
   z-index: 1;
   width: 100%;
-  overflow: hidden;
-  height: 90vh;
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 100%;
 }
 
 .carousel {
-  height: 100%;
+  overflow: hidden;
+  height: 100vh;
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
@@ -16,7 +18,7 @@
   text-align: center;
   position: absolute;
   left: 5%;
-  bottom: 30%;
+  bottom: 25%;
 }
 
 .carousel .carousel:hover {

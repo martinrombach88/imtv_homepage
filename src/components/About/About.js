@@ -17,8 +17,7 @@ const About = ({ staffList }) => {
       <div className="about">
         <div className="about__Container">
           <div className="about__Intro">
-            {/* {lang ? "imtv에 대해" : "about imtv"} */}
-            <h1>ABOUT IMTV</h1>
+            <h1>{lang ? "IMTV에 대해" : "ABOUT IMTV"}</h1>
             <h5>{aboutText}</h5>
           </div>
         </div>

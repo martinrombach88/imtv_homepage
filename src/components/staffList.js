@@ -54,7 +54,6 @@ const staffList = [
       "- Produced 'Memories of My Dating', NAVER web drama 'Missing You', KBS Children's Drama <Magic Scroll>, SBS's Wednesday-Thursday mini-series, 'Into the New World', KBS Friday mini-series 'Spy', OCN Monday-Tuesday Romance <The Man Osu>, KT's original drama, <Shh! Please Take Care of Him>",
       "- Web Movie <Memento-mori> Production ☜ 2018 CANNESERIES Festival Digital Contents competition finalist / 2018 Seoul Web Fest Grand Prize",
     ],
-    image: "/assets/images/staff/ceo.jpg",
   },
   {
     titleENG: "Executive Vice President / Producer",
@@ -107,7 +106,6 @@ const staffList = [
       "- Nave Webdrama [0 o'clock girl], [Milkid] Planning and business executive",
       "- Movie [Memories of My Love], [Mementomori] Planning Producer",
     ],
-    image: null,
   },
 
   {
@@ -129,7 +127,6 @@ const staffList = [
       "- (Former) Presidential Chief of Management, Managing Director, Pressey",
       "- (i) Director, Management Division of IMTV",
     ],
-    image: null,
   },
   {
     titleENG: "Head of Global Content / Producer",
@@ -170,7 +167,6 @@ const staffList = [
       "- Brand Video [Rode Electronics]",
       "- Music video [2NE1, EXO]]",
     ],
-    image: "/assets/images/staff/headofglobal.jpg",
   },
   {
     titleENG: "Documentary Director/Producer",
@@ -199,7 +195,6 @@ const staffList = [
       "- KBS [Companion], [Golden Pond], [The Boss Is Crazy], EBS [Beyond], MBN [Scene Lefo Screaming World], SBS [Water is Life] Production Team Leader",
       "- Documentary JTBC [Bernard Werber's Cat Dictionary], Tving [Vegetable These Days], [Bread Odyssey] Production Executive",
     ],
-    image: null,
   },
   {
     titleENG: "Documentary Team Leader / Producer",
@@ -224,7 +219,6 @@ const staffList = [
       " - National Geographic Channel documentary, directed by [Get Lost in Korea]",
       "- Documentary KBS [World Music-Cuba], KBS Documentary Sympathy [Miracle of the Finger - Thank You], SKY UHD [Birth of Silheum], KBS [City Resurrects], CJ UXN [Breaking Limits], JTBC [Bernard Verber's Cat Dictionary], KBS [Chado Samgukji], Tving] [Vegetarian]",
     ],
-    image: null,
   },
 
   {
@@ -254,7 +248,6 @@ const staffList = [
       "- KBS History Special [Oekyu Janggak, Choi Yoon-deok], KBS Special [Running Instinct], EBS [Beyond] Writers",
       "- Writers of documentaries KBS [World Music-Cuba], MBC [My Mom Soon-ae], SKY UHD [Birth of Silheum], JTBC [Bernard Werber's Cat Dictionary], KBS [Chado Samgukji], TVing [Vegetarian]",
     ],
-    image: null,
   },
 
   {
@@ -313,7 +306,6 @@ const staffList = [
       "- 2013-14 KBS 'Ruby Ring'",
       "- 2015 KBS 'The Masked Examination'",
     ],
-    image: null,
   },
   {
     titleENG: "Director/Producer of Drama",
@@ -344,7 +336,6 @@ const staffList = [
       "- KT ORIGINAL. [Shh!] [Please take care of him]",
       "- NETFLIX [The fool of the end]",
     ],
-    image: null,
   },
   {
     titleENG: "Director of Drama/Writer",
@@ -369,7 +360,6 @@ const staffList = [
       "- NAVER! [Milkidd]",
       -"KT! [Shh!]n= 'Please Take Care of Him'",
     ],
-    image: null,
   },
 ];
 
