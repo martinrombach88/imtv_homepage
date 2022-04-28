@@ -31,7 +31,7 @@ function Home() {
       <Header headerStyle={"header"} />
       <VideoSlider mediaList={mediaList} />
       <HomeSnap
-        title="Test Title"
+        title="In Production"
         text={testText}
         img={mediaList[0].mediaImg}
       />

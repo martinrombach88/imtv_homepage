@@ -12,7 +12,7 @@ const About = ({ staffList }) => {
     : "Founded in 2001, IMTV Ltd. has been continuously growing based on the trust of Korean and foreign broadcasters and platforms. For 20 years our talented writers, creators, and directors have produced over 60 television programs, films and dramas and over 100 documentaries.";
 
   return (
-    <>
+    <div className="scroll">
       <Header headerStyle={"header initialPos"} />
       <div className="about">
         <div className="about__Container">
@@ -38,7 +38,7 @@ const About = ({ staffList }) => {
         </div> */}
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
