@@ -80,6 +80,7 @@
   background-color: rgb(244, 246, 248);
   width: 100%;
   color: black;
+  height: 100vh;
 }
 
 .newsHome__ImageContainer,
@@ -87,14 +88,19 @@
   width: 50%;
 }
 .newsHome__ContentContainer {
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
 }
 
 .newsHome__Image {
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+.pagination {
+  margin: 0;
 }

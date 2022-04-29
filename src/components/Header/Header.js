@@ -38,11 +38,7 @@ const Header = ({ headerStyle }) => {
       </div>
 
       <div className="header__Nav">
-        <Link
-          to="/media"
-          className="header__Btn header__blueBtn"
-          state={{ lang: lang }}
-        >
+        <Link to="/media" className="header__Btn" state={{ lang: lang }}>
           WORK
           {/* {lang ? "우리 매체" : "WORK"} */}
         </Link>
@@ -50,19 +46,15 @@ const Header = ({ headerStyle }) => {
           NEWS
           {/* {lang ? "최신 뉴스" : "NEWS"} */}
         </Link>
-        <Link to="/about" className=" header__Btn header__greenBtn">
+        <Link to="/about" className=" header__Btn">
           ABOUT
           {/* {lang ? "imtv 회사 개요" : "ABOUT"} */}
         </Link>
-        <Link to="/history" className=" header__Btn header__greenBtn">
+        <Link to="/history" className=" header__Btn">
           HISTORY
           {/* {lang ? "imtv 회사 개요" : "HISTORY"} */}
         </Link>
-        <Link
-          to="/contact"
-          state={{ lang }}
-          className=" header__Btn header__pinkBtn"
-        >
+        <Link className="header__Btn" to="/contact" state={{ lang }}>
           CONTACT
           {/* {lang ? "연락" : "CONTACT"} */}
         </Link>

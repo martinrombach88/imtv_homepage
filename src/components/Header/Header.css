@@ -54,15 +54,42 @@
   box-sizing: border-box;
 }
 
-.header__Btn {
+/* .header__Btn {
   cursor: pointer;
   text-align: center;
   text-decoration: none;
+  
+} */
+
+.header__Btn {
+  display: inline-block;
+  position: relative;
   color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
 
+.header__Btn:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -8px;
+  left: 0;
+  color: white;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
+}
+
+.header__Btn:hover:after {
+  color: white;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 .header__Btn:hover {
-  color: rgb(185, 185, 185);
+  color: white;
 }
 
 .header__Active,

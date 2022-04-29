@@ -14,7 +14,7 @@
 }
 
 .homesnap {
-  background-color: rgb(244, 246, 248);
+  background-color: rgb(27, 26, 37);
   color: black;
   scroll-snap-align: start;
   height: 100vh;
@@ -41,5 +41,36 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.homesnap__Btn {
+  display: inline-block;
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.homesnap__Btn:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -10px;
+  left: 0;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.homesnap__Btn:hover:after {
+  color: rgb(255, 255, 255);
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.homesnap__Btn:hover {
+  color: rgb(255, 255, 255);
 }

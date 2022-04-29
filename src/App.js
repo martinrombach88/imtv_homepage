@@ -17,6 +17,7 @@ import ContactInquiry from "./components/Contact/ContactInquiry.js";
 import mediaList from "./components/mediaList.js";
 import newsList from "./components/newsList.js";
 import staffList from "./components/staffList.js";
+import homeSnapList from "./components/homeSnapList.js";
 import { LangProvider } from "./components/Header/LangContext";
 import "./components/HomeSnap/HomeSnap.css";
 
@@ -30,11 +31,7 @@ function Home() {
     <div className="scrollSnap">
       <Header headerStyle={"header"} />
       <VideoSlider mediaList={mediaList} />
-      <HomeSnap
-        title="In Production"
-        text={testText}
-        img={mediaList[0].mediaImg}
-      />
+      <HomeSnap object={homeSnapList[0]} />
       <HomeSnap
         title="Test Title"
         text={testText}
