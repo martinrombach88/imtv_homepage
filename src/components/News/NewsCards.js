@@ -7,7 +7,7 @@ const NewsCards = ({ currentPosts, home, pagination }) => {
   const renderedCards = currentPosts.map((card, index) => {
     if (home) {
       return (
-        <div className="newsHome" key={index}>
+        <div key={index} className="newsHome">
           <div
             className="newsHome__ImageContainer"
             onClick={() =>
@@ -15,16 +15,17 @@ const NewsCards = ({ currentPosts, home, pagination }) => {
             }
           >
             <img
-              className={home ? "news__ImageHome" : "news__Image"}
-              src={card.image}
-              alt={card.titleKR}
+              className="newsHome__Image"
+              src={card.imageLarge}
+              alt={lang ? card.titleKR : card.titleENG}
             />
           </div>
 
-          <div className="news__ContentHomeContainer">
+          <div className="newsHome__ContentContainer">
+            <h4>{lang ? "최신 뉴스" : "latest news"}</h4>
             <h4>
-              {card.titleKR}
-              {card.dateKR}
+              {lang ? card.titleKR : card.titleENG}
+              {lang ? card.dateKR : card.dateENG}
             </h4>
             {pagination}
           </div>
@@ -55,8 +56,11 @@ const NewsCards = ({ currentPosts, home, pagination }) => {
       );
     }
   });
-  return (
-    <div className={home ? "news__Home" : "news__Cards"}>{renderedCards}</div>
+
+  return home ? (
+    renderedCards
+  ) : (
+    <div className="news__Cards">{renderedCards}</div>
   );
 };
 

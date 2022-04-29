@@ -2,7 +2,7 @@ const hangugoNewsList = [
   {
     id: 1,
     image: "/assets/images//news/news1.jpg",
-    image2: "/assets/images/news/news1image2.jpg",
+    imageLarge: "/assets/images/news/news1large.jpg",
     dateKR: "2022 1월 13",
     dateENG: "13th Jan 2022",
     titleKR: "안은진·유아인·전성우·김윤혜, '종말의 바보' 출연 확정(공식)",
@@ -24,7 +24,7 @@ const hangugoNewsList = [
   {
     id: 2,
     image: "/assets/images/news/news2.png",
-    image2: "",
+    imageLarge: "/assets/images/news/news2large.png",
     dateKR: "2021 12월 20",
     dateENG: "20th Dec 2021",
     titleKR:
@@ -49,7 +49,7 @@ const hangugoNewsList = [
     dateKR: "2021 12월 5",
     dateENG: "5th Dec 2021",
     image: "/assets/images/news/news3.jpg",
-    image2: "",
+    imageLarge: "/assets/images/news/news3.jpg",
     titleKR:
       "아이엠티브이, 나비클럽 영상화 판권 계약체결 - '2021 IP 콘텐츠 사업화 상담회'를 통해",
     titleENG:
@@ -72,7 +72,7 @@ const hangugoNewsList = [
     dateKR: "2021 10월 16",
     dateENG: "16th October 2021",
     image: "/assets/images/news/news4.jpg",
-    image2: "",
+    imageLarge: "/assets/images/news/news4.jpg",
     titleKR:
       "'쉿! 그놈을 부탁해' 김슬기·송지은·이주우·강율, 유쾌+통쾌 복수 대행극",
     titleENG:

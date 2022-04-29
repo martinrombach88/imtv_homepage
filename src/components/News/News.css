@@ -77,11 +77,8 @@
 .newsHome {
   display: flex;
   background-color: rgb(244, 246, 248);
-  height: 100vh;
   width: 100%;
   color: black;
-  display: flex;
-  width: 100%;
 }
 
 .newsHome__ImageContainer,
@@ -89,13 +86,15 @@
   width: 50%;
 }
 .newsHome__ContentContainer {
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .newsHome__Image {
+  padding-top: 6%;
   object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
