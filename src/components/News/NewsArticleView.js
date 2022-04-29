@@ -8,11 +8,6 @@ const NewsArticleView = () => {
   const navigate = useNavigate();
   const article = state.state.article;
   const lang = useLang();
-  let articleImage2 = article.image2 ? (
-    <img src={article.image2} alt={article.titleKR} />
-  ) : (
-    ""
-  );
 
   const body = lang
     ? article.bodyKR.map((newsParagraph, index) => {
@@ -22,12 +17,14 @@ const NewsArticleView = () => {
         return <p key={index}>{newsParagraph}</p>;
       });
   return (
-    <>
+    <div className="scroll">
       <Header headerStyle={"header initialPos"} />
       <div className="news news__Article">
         <h3>{lang ? article.titleKR : article.titleENG}</h3>
-        <img src={article.image} alt={article.titleKR} />
-        {articleImage2}
+        <img
+          src={article.imageLarge}
+          alt={lang ? article.titleKR : article.titleENG}
+        />
 
         <div className="news__ArticleBody">
           {body}
@@ -41,7 +38,7 @@ const NewsArticleView = () => {
           {lang ? "뉴스 돌아가" : "Back to News"}
         </p>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -99,7 +99,7 @@ const hangugoNewsList = [
     dateKR: "2021 10월 16",
     dateENG: "16th October 2021",
     image: "/assets/images/news/news5.jpg",
-    image2: "",
+    imageLarge: "/assets/images/news/news5.jpg",
     titleKR:
       "아이엠티브이와 프랑스 갤럭시가 제작한 '베르나르 베르베르의 고양이 사전' JTBC 팩추얼로 방송!",
     titleENG:
