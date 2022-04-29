@@ -73,3 +73,29 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+.newsHome {
+  display: flex;
+  background-color: rgb(244, 246, 248);
+  height: 100vh;
+  width: 100%;
+  color: black;
+  display: flex;
+  width: 100%;
+}
+
+.newsHome__ImageContainer,
+.newsHome__ContentContainer {
+  width: 50%;
+}
+.newsHome__ContentContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsHome__Image {
+  object-fit: cover;
+}

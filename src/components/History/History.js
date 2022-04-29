@@ -11,8 +11,6 @@ import Header from "../Header/Header.js";
 
 const History = () => {
   const lang = useLang();
-
-  // opts: "inline-evts",
   const customTheme = createTheme(themes.default, {
     timeline: {
       fontFamily: "Inter",

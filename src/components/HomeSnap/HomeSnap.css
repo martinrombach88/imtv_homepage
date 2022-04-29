@@ -1,8 +1,11 @@
 .scrollSnap {
   max-height: 100vh;
   overflow-y: scroll;
-  border: 1px solid gray;
   scroll-snap-type: y mandatory;
+}
+
+.scrollSnap::-webkit-scrollbar {
+  display: none;
 }
 
 .scroll {
@@ -19,9 +22,13 @@
   display: flex;
 }
 
-.homesnap__ImageContainer,
+.homesnap__ContentContainer,
 .homesnap__Content {
   width: 50%;
+}
+
+.homesnap__ComponentContainer {
+  width: 100%;
 }
 
 .homesnap__Image {

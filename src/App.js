@@ -38,7 +38,7 @@ function Home() {
       <HomeSnap
         title="Test Title"
         text={testText}
-        img={mediaList[0].mediaImg}
+        component={<News list={newsList} home={true} />}
       />
       {/* <HomeSnap title="Test Title" text={testText} /> */}
       {/* <Footer /> */}
