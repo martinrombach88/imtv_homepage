@@ -46,7 +46,7 @@ const Contact = () => {
     <div className="scroll">
       <Header headerStyle={"header initialPos"} />
       <div className="contact">
-        <h1>contact</h1>
+        <h1>{lang ? "IMTV에 문의" : "Contact IMTV"}</h1>
         <div className="contact__Buttons">
           <button
             type="button"

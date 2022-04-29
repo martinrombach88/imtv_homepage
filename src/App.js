@@ -19,26 +19,20 @@ import newsList from "./components/newsList.js";
 import staffList from "./components/staffList.js";
 import homeSnapList from "./components/homeSnapList.js";
 import { LangProvider } from "./components/Header/LangContext";
+import { useLang, useLangUpdate } from "./components/Header/LangContext";
 import "./components/HomeSnap/HomeSnap.css";
 
-// export const LangContext = React.createContext();
-
 function Home() {
-  const testText =
-    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?";
+  const lang = useLang();
+  const toggleLang = useLangUpdate();
 
   return (
     <div className="scrollSnap">
       <Header headerStyle={"header"} />
       <VideoSlider mediaList={mediaList} />
       <HomeSnap object={homeSnapList[0]} />
-      <HomeSnap
-        title="Test Title"
-        text={testText}
-        component={<News list={newsList} home={true} />}
-      />
-      {/* <HomeSnap title="Test Title" text={testText} /> */}
-      {/* <Footer /> */}
+      <HomeSnap component={<News list={newsList} home={true} />} />
+      <Footer />
     </div>
   );
 }

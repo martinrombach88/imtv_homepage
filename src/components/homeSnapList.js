@@ -1,9 +1,9 @@
 const homeSnapList = [
   {
     image: "./assets/images/home/fool.png",
-    smallTitleKR: "In Production",
-    mainTitleKR: "Fool in the End",
-    subTitleKR: "In collaboration with Netflix",
+    smallTitleKR: "생산 중",
+    mainTitleKR: "중말의 바보",
+    subTitleKR: "넷플릭스와 협업",
     smallTitleENG: "In Production",
     mainTitleENG: "Fool in the End",
     subTitleENG: "In collaboration with Netflix",

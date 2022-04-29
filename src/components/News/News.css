@@ -101,6 +101,10 @@
   width: 100%;
 }
 
+.newsHome__Title {
+  width: 80%;
+}
+
 .pagination {
   margin: 0;
 }

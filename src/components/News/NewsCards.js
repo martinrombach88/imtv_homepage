@@ -22,16 +22,10 @@ const NewsCards = ({ currentPosts, home, pagination }) => {
           </div>
 
           <div className="newsHome__ContentContainer">
-            <h6 className="homesnap__SmallTitle">
-              {lang ? "최신 뉴스" : "latest news"}
-            </h6>
-            <div className="homesnap__Title">
-              <h4 className="homesnap__MainTitle">
-                {lang ? card.titleKR : card.titleENG}
-              </h4>
-              <h5 className="homesnap__SubTitle">
-                {lang ? card.dateKR : card.dateENG}
-              </h5>
+            {lang ? <h5>최신 뉴스</h5> : <h6>latest news</h6>}
+            <div className="newsHome__Title">
+              <h4>{lang ? card.titleKR : card.titleENG}</h4>
+              <h5>{lang ? card.dateKR : card.dateENG}</h5>
             </div>
 
             {pagination}

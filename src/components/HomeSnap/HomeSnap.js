@@ -18,21 +18,42 @@ const HomeSnap = ({ object, component }) => {
         className="homesnap__Content"
         style={{ backgroundColor: object.backgroundColor, color: object.color }}
       >
-        <h6 className="homesnap__SmallTitle">
-          {lang ? object.smallTitleKR : object.smallTitleENG}
+        <h6>
+          {lang ? (
+            <h5>{object.smallTitleKR}</h5>
+          ) : (
+            <h5>{object.smallTitleENG}</h5>
+          )}
         </h6>
-        <div className="homesnap__Title">
-          <h3 className="homesnap__MainTitle">
-            {lang ? object.mainTitleKR : object.mainTitleENG}
-          </h3>
-          <h5 className="homesnap__SubTitle">
-            {lang ? object.subTitleKR : object.subTitleENG}
-          </h5>
+        <div>
+          {lang ? (
+            <h1>{object.mainTitleKR}</h1>
+          ) : (
+            <h3>{object.mainTitleENG}</h3>
+          )}
+
+          {lang ? <h4>{object.subTitleKR}</h4> : <h5>{object.subTitleENG}</h5>}
         </div>
 
-        <Link className="homesnap__Btn" to="/contact" state={{ lang }}>
-          View Project
-        </Link>
+        {lang ? (
+          <Link
+            style={{ fontSize: "1.2em" }}
+            className="homesnap__Btn"
+            to="/contact"
+            state={{ lang }}
+          >
+            프로젝트 보기
+          </Link>
+        ) : (
+          <Link
+            style={{ fontSize: "1em" }}
+            className="homesnap__Btn"
+            to="/contact"
+            state={{ lang }}
+          >
+            View Project
+          </Link>
+        )}
       </div>
     );
   }
