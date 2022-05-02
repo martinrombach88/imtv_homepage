@@ -28,6 +28,8 @@
 }
 
 .footer__ArrowDiv {
+  background: #101010;
+  color: rgb(214, 214, 214);
   position: relative;
   width: 100vw;
   display: flex;

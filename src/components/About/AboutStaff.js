@@ -5,13 +5,17 @@ import Arrow from "./Arrow";
 
 const AboutStaff = ({ staffList }) => {
   const lang = useLang();
-  const [profile, setProfile] = useState("Key Team");
+  const [profile, setProfile] = useState(
+    lang ? "프로필을 선택지" : "Choose a profile"
+  );
+
   const staffNames = staffList.map((staffName, index) => {
     return (
       <AboutStaffName
         key={index}
         name={staffName}
-        onClick={() => console.log("click")}
+        profile={profile}
+        setProfile={setProfile}
       />
     );
   });
@@ -19,14 +23,14 @@ const AboutStaff = ({ staffList }) => {
   return (
     <>
       <div className="about__Container">
+        <Arrow direction={true} />
         <div className="about__StaffContainer">
-          <h1>{lang ? "핵심 팀" : "Key Team"}</h1>
           <div className="about__Staff">
+            <h2>{lang ? "핵심 팀" : "KEY TEAM"}</h2>
             <div className="about__StaffColumn">{staffNames}</div>
             <div className="about__StaffProfile">{profile}</div>
           </div>
         </div>
-        <Arrow direction={true} />
       </div>
     </>
   );

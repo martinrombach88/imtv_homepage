@@ -12,12 +12,15 @@ import "./History.css";
 
 const History = () => {
   const lang = useLang();
+
+  const opts = {
+    layout: "inline-evts-inline-date",
+  };
   const customTheme = createTheme(themes.default, {
     timeline: {
       fontFamily: "Inter",
       fontSize: "1.25rem",
       fontWeight: 500,
-      opts: "inline-evts",
     },
     imageAtom: {
       objectFit: "cover",
@@ -31,7 +34,8 @@ const History = () => {
       fontWeight: 500,
     },
     timelineTrack: {
-      backgroundColor: "black",
+      backgroundColor: "rgb(244, 246, 248)",
+      color: "rgb(244, 246, 248)",
     },
     card: {
       backgroundColor: "#efefef",
@@ -44,7 +48,8 @@ const History = () => {
       backgroundColor: "rgb(255, 184, 129)",
     },
     marker: {
-      borderColor: "black",
+      backgroundColor: "rgb(244, 246, 248)",
+      border: "rgb(244, 246, 248)",
     },
   });
 
@@ -53,7 +58,7 @@ const History = () => {
       <Header headerStyle={"header initialPos"} />
       <div className="history">
         <h1>{lang ? "20년의 생산" : "twenty years of production"}</h1>
-        <Timeline theme={customTheme}>
+        <Timeline theme={customTheme} opts={opts}>
           <Events>
             <ImageEvent
               date="2022"
