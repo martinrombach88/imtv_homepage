@@ -1,0 +1,13 @@
+.history {
+  background-color: rgb(244, 246, 248);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.history h1 {
+  text-align: center;
+  padding: 1%;
+  margin: 1%;
+}

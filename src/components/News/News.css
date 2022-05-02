@@ -108,3 +108,10 @@
 .pagination {
   margin: 0;
 }
+
+.newsHome__CursorPointer {
+  cursor: pointer;
+}
+
+.newsHome:hover {
+}

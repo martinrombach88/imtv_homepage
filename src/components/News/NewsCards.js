@@ -9,7 +9,7 @@ const NewsCards = ({ currentPosts, home, pagination }) => {
       return (
         <div key={index} className="newsHome">
           <div
-            className="newsHome__ImageContainer"
+            className="newsHome__ImageContainer newsHome__CursorPointer"
             onClick={() =>
               navigate("/news_article", { state: { article: card } })
             }

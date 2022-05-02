@@ -3,7 +3,8 @@
   width: 100%;
   scroll-snap-align: start;
   height: 100vh;
-  width: 100%;
+  color: rgb(255, 255, 255);
+  position: relative;
 }
 
 .carousel {
@@ -11,12 +12,17 @@
   height: 100vh;
   color: rgb(255, 255, 255);
   cursor: pointer;
+  position: relative;
+}
+
+.carousel__Arrow {
+  display: flex;
+  color: rgb(255, 255, 255);
 }
 
 .carousel__Details {
-  display: flex;
-  text-align: center;
   position: absolute;
+  width: 100vw;
   left: 5%;
   bottom: 25%;
 }

@@ -2,6 +2,7 @@
   max-height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  position: relative;
 }
 
 .scrollSnap::-webkit-scrollbar {
@@ -13,8 +14,13 @@
   overflow-y: scroll;
 }
 
+.scroll__Arrow {
+  position: absolute;
+  color: rgb(244, 246, 248);
+}
+
 .homesnap {
-  background-color: rgb(27, 26, 37);
+  background-color: rgb(244, 246, 248);
   color: black;
   scroll-snap-align: start;
   height: 100vh;
@@ -35,6 +41,7 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 
 .homesnap__Content {

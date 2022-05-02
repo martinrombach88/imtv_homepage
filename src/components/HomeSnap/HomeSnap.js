@@ -7,8 +7,15 @@ const HomeSnap = ({ object, component, article }) => {
   const navigate = useNavigate();
   let content = null;
   let section = null;
-  if (object) {
-    content = <img src={object.image} alt="" className="homesnap__Image" />;
+  if (object && article) {
+    content = (
+      <img
+        src={object.image}
+        alt=""
+        className="homesnap__Image"
+        onClick={() => navigate("/news_article", { state: { article } })}
+      />
+    );
   }
   if (component) {
     content = component;
@@ -18,13 +25,12 @@ const HomeSnap = ({ object, component, article }) => {
         className="homesnap__Content"
         style={{ backgroundColor: object.backgroundColor, color: object.color }}
       >
-        <h6>
-          {lang ? (
-            <h5>{object.smallTitleKR}</h5>
-          ) : (
-            <h5>{object.smallTitleENG}</h5>
-          )}
-        </h6>
+        {lang ? (
+          <h5>{object.smallTitleKR}</h5>
+        ) : (
+          <h5>{object.smallTitleENG}</h5>
+        )}
+
         <div>
           {lang ? (
             <h1>{object.mainTitleKR}</h1>

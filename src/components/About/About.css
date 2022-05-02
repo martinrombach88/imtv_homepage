@@ -5,12 +5,10 @@
 
 .about__Container {
   display: flex;
+  height: 100%;
   margin: 0% 10%;
   justify-content: center;
-}
-
-.about__Partners {
-  height: 80vh;
+  position: relative;
 }
 
 .about__Intro,
@@ -19,18 +17,53 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1% 2%;
 }
 
-.about__Intro h1,
-.about__Partners h1 {
+.about__Intro h1 {
   margin-bottom: 5%;
+  font-size: 4rem;
+}
+.about__Partners h1,
+.about__StaffContainer h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.about__Intro h5 {
+  margin: 2%;
+  font-size: 2rem;
+}
+
+.about__Arrow {
+  position: absolute;
+  bottom: 2%;
+  --animation: shift;
+  animation: var(--animation, none) 1s infinite linear;
+}
+
+@keyframes shift {
+  0% {
+    transform: translateY(-10%);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
+}
+
+.about__Partners {
+  padding-top: 10%;
+  height: 90vh;
+  margin: 1%;
+  margin-bottom: 2%;
 }
 
 .about__PartnersCycler {
   display: flex;
   justify-content: center;
-  margin: 1%;
+  margin: 3%;
   overflow: hidden;
   flex-wrap: wrap;
   background-color: white;
@@ -48,7 +81,6 @@
   object-fit: contain;
   width: 25%;
   transition: opacity 0.2s;
-  /* margin: 0% 1%; */
 }
 
 @keyframes slide {
@@ -63,97 +95,32 @@
   }
 }
 
-.about__CompanyContainer,
 .about__StaffContainer {
-  text-align: center;
+  padding-top: 10%;
+  height: 90vh;
+  margin: 1%;
+  margin-bottom: 2%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.about__CompanyContainer {
-  padding-bottom: 2%;
-}
-
-.about__CompanyContainer h1,
-.about__StaffContainer h1 {
-  padding-bottom: 1%;
 }
 
 .about__Staff {
-  margin: 0% 10%;
+  width: 200vh;
+  height: 50vh;
+  overflow: hidden;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-.about__StaffMember {
-  padding: 2% 0%;
-  width: 30%;
+.about__StaffColumn,
+.about__StaffProfile {
+  border: black solid 1px;
 }
 
-.about__StaffIcon {
-  border-radius: 50%;
-  height: 200px;
+.about__StaffName {
+  cursor: pointer;
 }
 
-.about__StaffTitle {
-  position: relative;
-  padding-top: 3%;
-  padding-bottom: 1%;
-  text-align: center;
-}
-
-.about__StaffInfo {
-  list-style: none;
-}
-
-.about__ProfileContainer {
-  background-color: rgb(244, 246, 248);
-  color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about__Profile {
-  display: flex;
-  padding: 2% 6%;
-}
-
-.about__ProfileImage {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  align-items: center;
-}
-
-.about__ProfileImage img {
-  width: 350px;
-  border-radius: 5%;
-  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
-}
-
-.about__ProfileExit {
-  text-align: center;
-  width: 50px;
-  margin-top: 10%;
-}
-
-.about__ProfileInfo {
-  display: flex;
-  flex-direction: column;
-  padding-left: 2%;
-}
-
-.about__ProfileInfo ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.about__StaffWebDev {
-  text-align: right;
-  margin-top: 2%;
-  margin-right: 2%;
+.about__StaffName:hover {
+  background-color: darkgray;
 }

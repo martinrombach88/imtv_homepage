@@ -1,20 +1,33 @@
-import AboutStaffMember from "./AboutStaffMember.js";
+import { useLang } from "../Header/LangContext";
+import { useState } from "react";
+import AboutStaffName from "./AboutStaffName";
+import Arrow from "./Arrow";
 
 const AboutStaff = ({ staffList }) => {
-  const aboutStaffMembers = staffList.map((member, index) => {
-    if (member.titleENG !== "CEO") {
-      return <AboutStaffMember key={index} staffMember={member} />;
-    } else {
-      return null;
-    }
+  const lang = useLang();
+  const [profile, setProfile] = useState("Key Team");
+  const staffNames = staffList.map((staffName, index) => {
+    return (
+      <AboutStaffName
+        key={index}
+        name={staffName}
+        onClick={() => console.log("click")}
+      />
+    );
   });
 
   return (
     <>
-      <div className="about__Staff">
-        <AboutStaffMember staffMember={staffList[0]} />
+      <div className="about__Container">
+        <div className="about__StaffContainer">
+          <h1>{lang ? "핵심 팀" : "Key Team"}</h1>
+          <div className="about__Staff">
+            <div className="about__StaffColumn">{staffNames}</div>
+            <div className="about__StaffProfile">{profile}</div>
+          </div>
+        </div>
+        <Arrow direction={true} />
       </div>
-      <div className="about__Staff">{aboutStaffMembers}</div>
     </>
   );
 };

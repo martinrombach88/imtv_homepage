@@ -27,6 +27,17 @@
   margin: 0;
 }
 
+.footer__ArrowDiv {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__Arrow {
+  position: absolute;
+}
+
 .initialPos {
   position: initial;
 }

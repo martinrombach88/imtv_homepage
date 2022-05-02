@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header.js";
-import Footer from "./components/Header/Footer.js";
 import HomeSnap from "./components/HomeSnap/HomeSnap.js";
 import VideoSlider from "./components/VideoSlider/VideoSlider";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer.js";
@@ -9,7 +8,6 @@ import Media from "./components/Media/Media.js";
 import News from "./components/News/News.js";
 import NewsArticleView from "./components/News/NewsArticleView.js";
 import About from "./components/About/About.js";
-import AboutProfile from "./components/About/AboutProfile.js";
 import History from "./components/History/History.js";
 import Contact from "./components/Contact/Contact.js";
 import ContactProposal from "./components/Contact/ContactProposal.js";
@@ -19,6 +17,7 @@ import newsList from "./components/newsList.js";
 import staffList from "./components/staffList.js";
 import homeSnapList from "./components/homeSnapList.js";
 import { LangProvider } from "./components/Header/LangContext";
+import Arrow from "./components/About/Arrow.js";
 import { useLang, useLangUpdate } from "./components/Header/LangContext";
 import "./components/HomeSnap/HomeSnap.css";
 
@@ -50,7 +49,6 @@ function App() {
         <Route path="proposal" element={<ContactProposal />} />
         <Route path="inquiry" element={<ContactInquiry />} />
         <Route path="video" element={<VideoPlayer />} />
-        <Route path="profile" element={<AboutProfile />} />
       </Routes>
     </LangProvider>
   );

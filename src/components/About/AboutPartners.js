@@ -1,4 +1,9 @@
+import { useLang } from "../Header/LangContext";
+import Arrow from "./Arrow";
+
 const AboutPartners = () => {
+  const lang = useLang();
+
   const generateImages = (num) => {
     let url = "/assets/images/partners/";
     let urlArray = [];
@@ -13,8 +18,14 @@ const AboutPartners = () => {
   const renderedImages = generateImages(41);
 
   return (
-    <div className="about__PartnersCycler">
-      <div>{renderedImages}</div>
+    <div className="about__Container">
+      <div className="about__Partners">
+        <h1>{lang ? "파트너" : "PARTNERS"}</h1>
+        <div className="about__PartnersCycler">
+          <div>{renderedImages}</div>
+        </div>
+      </div>
+      <Arrow />
     </div>
   );
 };
