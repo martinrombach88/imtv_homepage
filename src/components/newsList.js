@@ -1,4 +1,4 @@
-const hangugoNewsList = [
+const newsList = [
   {
     id: 1,
     image: "/assets/images//news/news1.jpg",
@@ -123,4 +123,4 @@ const hangugoNewsList = [
   },
 ];
 
-export default hangugoNewsList;
+export default newsList;

@@ -2,7 +2,7 @@ import "./HomeSnap.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useLang } from "../Header/LangContext";
 
-const HomeSnap = ({ object, component }) => {
+const HomeSnap = ({ object, component, article }) => {
   const lang = useLang();
   const navigate = useNavigate();
   let content = null;
@@ -36,23 +36,24 @@ const HomeSnap = ({ object, component }) => {
         </div>
 
         {lang ? (
-          <Link
+          <p
             style={{ fontSize: "1.2em" }}
             className="homesnap__Btn"
-            to="/contact"
+            to="news_article"
+            onClick={() => navigate("/news_article", { state: { article } })}
             state={{ lang }}
           >
             프로젝트 보기
-          </Link>
+          </p>
         ) : (
-          <Link
+          <p
             style={{ fontSize: "1em" }}
             className="homesnap__Btn"
-            to="/contact"
-            state={{ lang }}
+            to="news_article"
+            onClick={() => navigate("/news_article", { state: { article } })}
           >
             View Project
-          </Link>
+          </p>
         )}
       </div>
     );
