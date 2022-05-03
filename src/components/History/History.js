@@ -14,7 +14,7 @@ const History = () => {
   const lang = useLang();
 
   const opts = {
-    layout: "inline-evts-inline-date",
+    layout: "inline-evts",
   };
   const customTheme = createTheme(themes.default, {
     timeline: {
@@ -34,8 +34,8 @@ const History = () => {
       fontWeight: 500,
     },
     timelineTrack: {
-      backgroundColor: "rgb(244, 246, 248)",
-      color: "rgb(244, 246, 248)",
+      // backgroundColor: "rgb(244, 246, 248)",
+      // color: "rgb(244, 246, 248)",
     },
     card: {
       backgroundColor: "#efefef",
@@ -48,8 +48,11 @@ const History = () => {
       backgroundColor: "rgb(255, 184, 129)",
     },
     marker: {
+      paddingLeft: "10%",
       backgroundColor: "rgb(244, 246, 248)",
       border: "rgb(244, 246, 248)",
+      // backgroundColor: "rgb(244, 246, 248)",
+      // border: "rgb(244, 246, 248)",
     },
   });
 

@@ -9,13 +9,19 @@ import { useLang } from "../Header/LangContext";
 
 const About = ({ staffList }) => {
   const lang = useLang();
-
+  const styleObject = {
+    color: "black",
+    backgroundColor: "rgb(251,251,240)",
+  };
   return (
     <div className="scrollSnap">
       <Header headerStyle={"header"} />
       <HomeSnap component={<AboutIntro />} />
       <HomeSnap component={<AboutPartners />} />
-      <HomeSnap component={<AboutTeam staffList={staffList} />} />
+      <HomeSnap
+        styleObject={styleObject}
+        component={<AboutTeam staffList={staffList} />}
+      />
     </div>
   );
 };

@@ -123,6 +123,7 @@
 .about__StaffProfile,
 .about__StaffColumn {
   overflow-y: scroll;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -131,6 +132,24 @@
   justify-content: center;
   width: 60%;
 }
+
+.about__StaffProfile::-webkit-scrollbar,
+.about__StaffColumn::-webkit-scrollbar {
+  background-color: rgb(251, 251, 240);
+  width: 1em;
+}
+
+.about__StaffProfile::-webkit-scrollbar-track {
+  background-color: rgb(251, 251, 240);
+  background-color: rgb(251, 251, 240);
+}
+
+.about__StaffProfile::-webkit-scrollbar-thumb,
+.about__StaffColumn::-webkit-scrollbar-thumb {
+  background-color: rgb(230, 230, 223);
+  /* outline: 1px solid slategrey; */
+}
+
 .about__StaffContentHeader {
   font-weight: bold;
 }
@@ -148,5 +167,5 @@
 }
 
 .about__StaffName:hover {
-  background-color: rgb(198, 198, 198);
+  background-color: rgb(230, 230, 223);
 }

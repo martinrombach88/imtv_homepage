@@ -5,9 +5,7 @@ import Arrow from "./Arrow";
 
 const AboutStaff = ({ staffList }) => {
   const lang = useLang();
-  const [profile, setProfile] = useState(
-    lang ? "프로필을 선택지" : "Choose a profile"
-  );
+  const [profile, setProfile] = useState(null);
 
   const staffNames = staffList.map((staffName, index) => {
     return (
@@ -26,7 +24,7 @@ const AboutStaff = ({ staffList }) => {
         <Arrow direction={true} />
         <div className="about__StaffContainer">
           <div className="about__Staff">
-            <h2>{lang ? "핵심 팀" : "KEY TEAM"}</h2>
+            <h2>KEY TEAM</h2>
             <div className="about__StaffColumn">{staffNames}</div>
             <div className="about__StaffProfile">{profile}</div>
           </div>

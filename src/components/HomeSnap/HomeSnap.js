@@ -2,7 +2,7 @@ import "./HomeSnap.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useLang } from "../Header/LangContext";
 
-const HomeSnap = ({ object, component, article }) => {
+const HomeSnap = ({ object, component, article, styleObject }) => {
   const lang = useLang();
   const navigate = useNavigate();
   let content = null;
@@ -73,6 +73,7 @@ const HomeSnap = ({ object, component, article }) => {
             ? "homesnap__ComponentContainer"
             : "homesnap__ContentContainer"
         }
+        style={styleObject}
       >
         {content}
       </div>
