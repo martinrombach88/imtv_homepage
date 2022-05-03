@@ -10,6 +10,18 @@ const homeSnapList = [
     color: "rgb(174, 213, 243)",
     backgroundColor: "rgb(33,54,80)",
   },
+  {
+    color: "white",
+    backgroundColor: "black",
+    backgroundImage: "url('./assets/images/aboutHeader.png')",
+    width: "100%",
+    transform: "perspective(400px) rotate3D(0, 10, 0, 20deg)",
+  },
+  {
+    color: "black",
+    backgroundColor: "rgb(250, 250, 212)",
+    backgroundImage: null,
+  },
 ];
 
 export default homeSnapList;

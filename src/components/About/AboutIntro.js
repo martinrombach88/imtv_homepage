@@ -1,7 +1,7 @@
 import { useLang } from "../Header/LangContext";
 import Arrow from "./Arrow";
 
-const AboutIntro = () => {
+const AboutIntro = ({ imageObject }) => {
   const lang = useLang();
   const aboutTextArray = lang
     ? [

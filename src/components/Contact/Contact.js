@@ -53,14 +53,14 @@ const Contact = () => {
             className="btn btn-secondary btn-lg"
             onClick={() => navigate("/proposal")}
           >
-            {lang ? "프로젝트를 제안해" : "Propose a Project"}
+            {lang ? "기획안·시나리오 접수" : "Propose a Project"}
           </button>
           <button
             type="button"
             className="btn btn-secondary btn-lg"
             onClick={() => navigate("/inquiry")}
           >
-            {lang ? "사업 협력 관계 시작" : "Start a Partnership"}
+            {lang ? "제휴 문의" : "Start a Partnership"}
           </button>
         </div>
         <div className="contact__General">

@@ -1,5 +1,5 @@
 import "./HomeSnap.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useLang } from "../Header/LangContext";
 
 const HomeSnap = ({ object, component, article, styleObject }) => {
@@ -21,10 +21,7 @@ const HomeSnap = ({ object, component, article, styleObject }) => {
     content = component;
   } else {
     section = (
-      <div
-        className="homesnap__Content"
-        style={{ backgroundColor: object.backgroundColor, color: object.color }}
-      >
+      <div className="homesnap__Content">
         {lang ? (
           <h5>{object.smallTitleKR}</h5>
         ) : (
