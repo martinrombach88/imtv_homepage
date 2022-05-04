@@ -13,14 +13,14 @@ const AboutStaffName = ({ name, setProfile }) => {
     <div>
       <h2 className="about__StaffContentHeader">{name.nameKR}</h2>
       <h2>{name.titleKR}</h2>
-      <ul>{infoListKR}</ul>
+      <ul className="about__StaffList">{infoListKR}</ul>
     </div>
   );
   const fullProfileENG = (
     <div>
       <h2 className="about__StaffContentHeader">{name.nameENG}</h2>
       <h2>{name.titleENG}</h2>
-      <ul>{infoListENG}</ul>
+      <ul className="about__StaffList">{infoListENG}</ul>
     </div>
   );
 

@@ -104,20 +104,20 @@
 }
 
 .about__Staff {
-  width: 200vh;
+  width: 100vw;
   height: 80vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
-  text-align: center;
+  /* text-align: center; */
+}
+
+.about__StaffColumn {
+  width: 30%;
 }
 
 .about__StaffProfile {
-  width: 60%;
-  font-size: 1.2rem;
-}
-.about__StaffColumn {
-  width: 40%;
+  width: 50%;
 }
 
 .about__StaffProfile,
@@ -127,16 +127,27 @@
   scroll-behavior: smooth;
 }
 
-.about__StaffProfile {
-  display: flex;
-  justify-content: center;
-  width: 60%;
+.about__StaffProfile h2 {
+  padding-left: 5%;
 }
 
-.about__StaffTitle {
-  display: flex;
-  /* justify-content: center;
-  align-items: center; */
+.about__StaffProfile ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 5%;
+}
+
+.about__StaffProfile div {
+  font-size: 1.2rem;
+}
+
+.about__StaffName {
+  cursor: pointer;
+  margin: 2%;
+}
+
+.about__StaffName h5 {
+  font-weight: bold;
 }
 
 .about__StaffProfile::-webkit-scrollbar,
@@ -159,15 +170,8 @@
 .about__StaffContentHeader {
   font-weight: bold;
 }
-.about__StaffProfile ul li {
-  list-style: none;
-}
 
-.about__StaffName {
-  cursor: pointer;
-  margin: 2%;
-}
-
-.about__StaffName h5 {
-  font-weight: bold;
+.about__StaffTitle {
+  padding-left: 12%;
+  width: 100%;
 }
