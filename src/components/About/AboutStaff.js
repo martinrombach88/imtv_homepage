@@ -1,10 +1,8 @@
-import { useLang } from "../Header/LangContext";
 import { useState } from "react";
 import AboutStaffName from "./AboutStaffName";
 import Arrow from "./Arrow";
 
 const AboutStaff = ({ staffList }) => {
-  const lang = useLang();
   const [profile, setProfile] = useState(null);
 
   const staffNames = staffList.map((staffName, index) => {

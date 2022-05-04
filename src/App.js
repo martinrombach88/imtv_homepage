@@ -17,14 +17,9 @@ import newsList from "./components/newsList.js";
 import staffList from "./components/staffList.js";
 import homeSnapList from "./components/homeSnapList.js";
 import { LangProvider } from "./components/Header/LangContext";
-import Arrow from "./components/About/Arrow.js";
-import { useLang, useLangUpdate } from "./components/Header/LangContext";
 import "./components/HomeSnap/HomeSnap.css";
 
 function Home() {
-  const lang = useLang();
-  const toggleLang = useLangUpdate();
-
   return (
     <div className="scrollSnap">
       <Header headerStyle={"header"} />

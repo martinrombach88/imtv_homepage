@@ -22,9 +22,6 @@ const Header = ({ headerStyle }) => {
 
   let koText = lang ? "header__Active" : "header__Inactive";
   let enText = lang ? "header__Inactive" : "header__Active";
-  // let currLang = lang ? flags.krflag.name : flags.usflag.name;
-  let krFlag = lang ? flags.krflag.color_url : flags.krflag.grey_url;
-  let enFlag = lang ? flags.usflag.grey_url : flags.usflag.color_url;
 
   return (
     <nav className={headerStyle}>

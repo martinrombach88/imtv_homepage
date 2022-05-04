@@ -5,7 +5,6 @@ import { Carousel } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useLang } from "../Header/LangContext";
 import Footer from "../Header/Footer";
-import Arrow from "../About/Arrow";
 
 const VideoSlider = ({ mediaList }) => {
   const lang = useLang();

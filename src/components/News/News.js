@@ -16,7 +16,6 @@ const News = ({ list, home }) => {
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = list.slice(indexOfFirstPost, indexOfLastPost);
-  const lang = useLang();
 
   if (home) {
     return (
