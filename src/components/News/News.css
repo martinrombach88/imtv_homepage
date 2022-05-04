@@ -8,6 +8,7 @@
 .news h2 {
   padding: 1%;
   margin: 1%;
+  font-weight: 800;
 }
 
 .news__Cards {
