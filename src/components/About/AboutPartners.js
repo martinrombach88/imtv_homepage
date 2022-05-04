@@ -20,7 +20,7 @@ const AboutPartners = () => {
   return (
     <div className="about__Container">
       <div className="about__Partners">
-        <h1>{lang ? "파트너" : "PARTNERS"}</h1>
+        <h1>PARTNERS</h1>
         <div className="about__PartnersCycler">
           <div>{renderedImages}</div>
         </div>
