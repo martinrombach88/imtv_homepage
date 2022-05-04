@@ -3,7 +3,6 @@ import Arrow from "../About/Arrow.js";
 
 const Footer = ({ arrow }) => {
   const lang = useLang();
-  const footerText = lang;
 
   return arrow ? (
     <div className="footer__ArrowDiv">

@@ -4,12 +4,10 @@ import "./News.css";
 import { useState } from "react";
 import NewsCards from "./NewsCards";
 import NewsPagination from "./NewsPagination";
-import { useLang } from "../Header/LangContext";
 
 const News = ({ list, home }) => {
   //Pagination
   let posts = home ? 1 : 4;
-
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(posts);

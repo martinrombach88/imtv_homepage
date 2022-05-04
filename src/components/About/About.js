@@ -7,8 +7,6 @@ import { useLang } from "../Header/LangContext";
 import homeSnapList from "../homeSnapList";
 
 const About = ({ staffList }) => {
-  const lang = useLang();
-
   return (
     <div className="scrollSnap">
       <Header headerStyle={"header"} />

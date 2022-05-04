@@ -7,19 +7,6 @@ const Header = ({ headerStyle }) => {
   const toggleLang = useLangUpdate();
   const navigate = useNavigate();
 
-  let flags = {
-    usflag: {
-      name: "Eng",
-      color_url: "/assets/images/us_flag.png",
-      grey_url: "/assets/images/us_flag_grey.png",
-    },
-    krflag: {
-      name: "한국어",
-      color_url: "/assets/images/kr_flag.png",
-      grey_url: "/assets/images/kr_flag_grey.png",
-    },
-  };
-
   let koText = lang ? "header__Active" : "header__Inactive";
   let enText = lang ? "header__Inactive" : "header__Active";
 
