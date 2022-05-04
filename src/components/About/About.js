@@ -3,7 +3,6 @@ import Header from "../Header/Header";
 import AboutPartners from "./AboutPartners.js";
 import AboutStaff from "./AboutStaff.js";
 import HomeSnap from "../HomeSnap/HomeSnap.js";
-import { useLang } from "../Header/LangContext";
 import homeSnapList from "../homeSnapList";
 
 const About = ({ staffList }) => {
