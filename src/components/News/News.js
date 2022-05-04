@@ -34,7 +34,7 @@ const News = ({ list, home }) => {
       <div className="scroll">
         <Header headerStyle={"header initialPos"} />
         <div className="news">
-          <h2> NEWS</h2>
+          <h1> LATEST NEWS</h1>
           <NewsCards currentPosts={currentPosts} />
           <NewsPagination
             postsPerPage={postsPerPage}
