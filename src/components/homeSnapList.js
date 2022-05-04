@@ -18,7 +18,8 @@ const homeSnapList = [
   },
   {
     color: "black",
-    backgroundColor: "rgb(250, 250, 212)",
+    color: "rgb(174, 213, 243)",
+    backgroundColor: "rgb(33,54,80)",
     backgroundImage: null,
   },
   {

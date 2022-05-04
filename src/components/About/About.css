@@ -19,19 +19,11 @@
   align-items: center;
 }
 
-.about__Intro h1 {
-  margin-bottom: 5%;
-  font-size: 4rem;
-}
 .about__Partners h1,
 .about__StaffContainer h1 {
   font-size: 3rem;
   text-align: center;
-}
-
-.about__Intro h5 {
-  margin: 2%;
-  font-size: 2rem;
+  font-weight: 800;
 }
 
 .about__Arrow {
@@ -129,6 +121,7 @@
 
 .about__StaffProfile h2 {
   padding-left: 5%;
+  color: white;
 }
 
 .about__StaffProfile ul {
@@ -148,23 +141,24 @@
 
 .about__StaffName h5 {
   font-weight: bold;
+  color: white;
 }
 
 .about__StaffProfile::-webkit-scrollbar,
 .about__StaffColumn::-webkit-scrollbar {
-  background-color: rgb(250, 250, 240);
+  background-color: rgb(33, 54, 80);
   width: 1em;
 }
 
 .about__StaffProfile::-webkit-scrollbar-track,
 .about__StaffColumn::-webkit-scrollbar-track {
-  background-color: rgb(250, 250, 212);
+  background-color: rgb(33, 54, 80);
 }
 
 .about__StaffProfile::-webkit-scrollbar-thumb,
 .about__StaffColumn::-webkit-scrollbar-thumb,
 .about__StaffName:hover {
-  background-color: rgb(210, 210, 177);
+  background-color: rgb(49, 80, 118);
 }
 
 .about__StaffContentHeader {
@@ -174,4 +168,8 @@
 .about__StaffTitle {
   padding-left: 12%;
   width: 100%;
+}
+
+.about__StaffTitle h2 {
+  font-weight: 800;
 }
