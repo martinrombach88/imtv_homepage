@@ -17,7 +17,6 @@ const homeSnapList = [
     width: "100%",
   },
   {
-    color: "black",
     color: "rgb(174, 213, 243)",
     backgroundColor: "rgb(33,54,80)",
     backgroundImage: null,
