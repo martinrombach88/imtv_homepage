@@ -1,4 +1,3 @@
-import { useLang } from "../Header/LangContext";
 import Arrow from "./Arrow";
 
 const AboutPartners = () => {
