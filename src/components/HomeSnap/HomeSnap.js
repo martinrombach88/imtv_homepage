@@ -1,8 +1,16 @@
 import "./HomeSnap.css";
 import { useNavigate } from "react-router-dom";
 import { useLang } from "../Header/LangContext";
+import Arrow from "../About/Arrow";
 
-const HomeSnap = ({ object, component, article, styleObject }) => {
+const HomeSnap = ({
+  article,
+  component,
+  leftImage,
+  textSection,
+  object,
+  styleObject,
+}) => {
   const lang = useLang();
   const navigate = useNavigate();
   let content = null;
@@ -11,17 +19,41 @@ const HomeSnap = ({ object, component, article, styleObject }) => {
     content = (
       <img
         src={object.image}
-        alt=""
         className="homesnap__Image"
+        alt={object.mainTitleKR}
         onClick={() => navigate("/news_article", { state: { article } })}
       />
     );
+  } else if (object && !article) {
+    content = (
+      <img
+        src={object.image}
+        alt={object.mainTitleKR}
+        className="homesnap__Image"
+      />
+    );
   }
+
   if (component) {
     content = component;
+  } else if (textSection) {
+    section = (
+      <div className="homesnap__Content" style={styleObject}>
+        <div className="homesnap__TextSection">
+          {lang ? (
+            <h1>{object.mainTitleKR}</h1>
+          ) : (
+            <h1>{object.mainTitleENG}</h1>
+          )}
+
+          {lang ? <h4>{object.subTitleKR}</h4> : <h4>{object.subTitleENG}</h4>}
+        </div>
+        <Arrow />
+      </div>
+    );
   } else {
     section = (
-      <div className="homesnap__Content">
+      <div className="homesnap__Content" style={styleObject}>
         {lang ? (
           <h5>{object.smallTitleKR}</h5>
         ) : (
@@ -58,25 +90,43 @@ const HomeSnap = ({ object, component, article, styleObject }) => {
             View Project
           </p>
         )}
+        <Arrow />
       </div>
     );
   }
-
-  return (
-    <div className="homesnap">
-      <div
-        className={
-          component
-            ? "homesnap__ComponentContainer"
-            : "homesnap__ContentContainer"
-        }
-        style={styleObject}
-      >
-        {content}
+  if (leftImage) {
+    return (
+      <div className="homesnap">
+        {section}
+        <div
+          className={
+            component
+              ? "homesnap__ComponentContainer"
+              : "homesnap__ContentContainer"
+          }
+          style={styleObject}
+        >
+          {content}
+        </div>
       </div>
-      {section}
-    </div>
-  );
+    );
+  } else {
+    return (
+      <div className="homesnap">
+        <div
+          className={
+            component
+              ? "homesnap__ComponentContainer"
+              : "homesnap__ContentContainer"
+          }
+          style={styleObject}
+        >
+          {content}
+        </div>
+        {section}
+      </div>
+    );
+  }
 };
 
 export default HomeSnap;

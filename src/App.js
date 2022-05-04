@@ -29,7 +29,11 @@ function Home() {
     <div className="scrollSnap">
       <Header headerStyle={"header"} />
       <VideoSlider mediaList={mediaList} />
-      <HomeSnap object={homeSnapList[0]} article={newsList[1]} />
+      <HomeSnap
+        object={homeSnapList[0]}
+        styleObject={homeSnapList[0]}
+        article={newsList[1]}
+      />
       <HomeSnap component={<News list={newsList} home={true} />} />
     </div>
   );

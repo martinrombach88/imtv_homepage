@@ -105,13 +105,19 @@
   width: 80%;
 }
 
+.newsHome__Title h4 {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.newsHome__Title h4:hover {
+  color: rgb(127, 32, 168);
+}
+
 .pagination {
   margin: 0;
 }
 
 .newsHome__CursorPointer {
   cursor: pointer;
-}
-
-.newsHome:hover {
 }

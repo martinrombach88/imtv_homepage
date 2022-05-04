@@ -24,7 +24,13 @@ const NewsCards = ({ currentPosts, home, pagination }) => {
           <div className="newsHome__ContentContainer">
             {lang ? <h5>최신 뉴스</h5> : <h6>latest news</h6>}
             <div className="newsHome__Title">
-              <h4>{lang ? card.titleKR : card.titleENG}</h4>
+              <h4
+                onClick={() =>
+                  navigate("/news_article", { state: { article: card } })
+                }
+              >
+                {lang ? card.titleKR : card.titleENG}
+              </h4>
               <h5>{lang ? card.dateKR : card.dateENG}</h5>
             </div>
 

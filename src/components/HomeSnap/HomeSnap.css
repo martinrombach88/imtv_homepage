@@ -50,6 +50,7 @@
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
+  position: relative;
 }
 
 .homesnap__Btn {
@@ -81,4 +82,8 @@
 }
 .homesnap__Btn:hover {
   color: rgb(255, 255, 255);
+}
+
+.homesnap__TextSection {
+  width: 80%;
 }
