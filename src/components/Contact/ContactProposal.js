@@ -21,13 +21,11 @@ const ContactProposal = () => {
   };
 
   return (
-    <>
+    <div className="scroll">
       <Header headerStyle={"header initialPos"} />
       <div className="contact">
         <div className="contact__FormHeader">
-          <h2>
-            {lang ? "프로젝트 제안/시나리오" : "project proposal / scenario"}
-          </h2>
+          <h2>{lang ? "기획안·시나리오 접수" : "PROJECT/SCENARIO PROPOSAL"}</h2>
         </div>
 
         <div className="contact__FormInfo">
@@ -231,7 +229,7 @@ const ContactProposal = () => {
         </form>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

@@ -19,7 +19,7 @@ const History = () => {
   const customTheme = createTheme(themes.default, {
     timeline: {
       fontFamily: "Inter",
-      fontSize: "1.25rem",
+      fontSize: "1.4rem",
       fontWeight: 500,
     },
     imageAtom: {
@@ -30,12 +30,12 @@ const History = () => {
     },
     imageText: {
       fontFamily: "Inter",
-      fontSize: "1.25rem",
+      fontSize: "1.4rem",
       fontWeight: 500,
     },
     timelineTrack: {
-      // backgroundColor: "rgb(244, 246, 248)",
-      // color: "rgb(244, 246, 248)",
+      backgroundColor: "black",
+      color: "black",
     },
     card: {
       backgroundColor: "#efefef",
@@ -43,16 +43,20 @@ const History = () => {
     },
     date: {
       fontFamily: "Inter",
-      fontSize: "1.25rem",
-      fontWeight: 500,
-      backgroundColor: "rgb(255, 184, 129)",
+      fontSize: "1.4rem",
+      fontWeight: 800,
+      // color: "black",
+      color: "rgb(40, 110, 180)",
+      backgroundColor: "rgb(244, 246, 248)",
     },
     marker: {
-      paddingLeft: "10%",
       backgroundColor: "rgb(244, 246, 248)",
-      border: "rgb(244, 246, 248)",
-      // backgroundColor: "rgb(244, 246, 248)",
-      // border: "rgb(244, 246, 248)",
+      border: "none",
+      borderRadius: "50%",
+      width: "16px",
+      height: "16px",
+      zIndex: 100,
+      left: "1px",
     },
   });
 
@@ -60,7 +64,7 @@ const History = () => {
     <div className="scroll">
       <Header headerStyle={"header initialPos"} />
       <div className="history">
-        <h1>{lang ? "20년의 생산" : "twenty years of production"}</h1>
+        <h2>20 YEARS OF PRODUCTION</h2>
         <Timeline theme={customTheme} opts={opts}>
           <Events>
             <ImageEvent
@@ -187,14 +191,7 @@ const History = () => {
                   : "KBS children's drama Magic Scroll is released. Stars Ki-joon Shin, Ji-woo Lee and Lee Seul Cheon."
               }
             ></TextEvent>
-            <TextEvent
-              date="2013"
-              text={
-                lang
-                  ? "KBS 드라마 특집 곡비 공개. 드라마 주연 김유정, 서준영."
-                  : "KBS children's drama Magic Scroll is released. Stars Ki-joon Shin, Ji-woo Lee and Lee Seul Cheon."
-              }
-            ></TextEvent>
+
             <TextEvent
               date="2013"
               text={

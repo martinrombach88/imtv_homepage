@@ -22,7 +22,7 @@ const NewsCards = ({ currentPosts, home, pagination }) => {
           </div>
 
           <div className="newsHome__ContentContainer">
-            {lang ? <h5>최신 뉴스</h5> : <h6>latest news</h6>}
+            <h4>NEWS</h4>
             <div className="newsHome__Title">
               <h4
                 onClick={() =>

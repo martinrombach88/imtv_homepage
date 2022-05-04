@@ -22,11 +22,11 @@ const ContactInquiry = () => {
     alert(formInfo);
   };
   return (
-    <>
+    <div className="scroll">
       <Header headerStyle={"header initialPos"} />
       <div className="contact">
         <div className="contact__FormHeader">
-          <h2>{lang ? "파트너십 문의" : "partnership inquiry"}</h2>
+          <h2>{lang ? "제휴 문의" : "PARTNERSHIP INQUIRY"}</h2>
         </div>
 
         <div className="contact__FormInfo">
@@ -185,7 +185,7 @@ const ContactInquiry = () => {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 };
 

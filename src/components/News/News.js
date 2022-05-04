@@ -37,7 +37,7 @@ const News = ({ list, home }) => {
       <div className="scroll">
         <Header headerStyle={"header initialPos"} />
         <div className="news">
-          <h1>{lang ? "최신 뉴스" : "latest news"}</h1>
+          <h2> NEWS</h2>
           <NewsCards currentPosts={currentPosts} />
           <NewsPagination
             postsPerPage={postsPerPage}
