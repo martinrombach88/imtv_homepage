@@ -2,8 +2,6 @@ import { useLang } from "../Header/LangContext";
 import Arrow from "./Arrow";
 
 const AboutPartners = () => {
-  const lang = useLang();
-
   const generateImages = (num) => {
     let url = "/assets/images/partners/";
     let urlArray = [];
