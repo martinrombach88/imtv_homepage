@@ -1,0 +1,18 @@
+.video__Bg,
+.video__Player {
+  height: 100%;
+}
+
+.video__Exit {
+  position: absolute;
+  cursor: pointer;
+  right: 1%;
+  top: 0%;
+  font-size: 7vh;
+  text-decoration: none;
+  color: rgb(53, 218, 253);
+}
+
+.video__Exit:hover {
+  color: white;
+}

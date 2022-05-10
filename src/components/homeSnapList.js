@@ -1,5 +1,7 @@
 const homeSnapList = [
   {
+    id: 0,
+    title: "inProduction",
     image: "./assets/images/home/fool.png",
     smallTitleKR: "생산 중",
     mainTitleKR: "중말의 바보",
@@ -11,17 +13,23 @@ const homeSnapList = [
     backgroundColor: "rgb(33,54,80)",
   },
   {
+    id: 1,
+    title: "aboutIntro",
     color: "white",
     backgroundColor: "black",
     backgroundImage: "url('./assets/images/aboutHeader.png')",
     width: "100%",
   },
   {
+    id: 2,
+    title: "aboutStaff",
     color: "rgb(174, 213, 243)",
     backgroundColor: "rgb(33,54,80)",
     backgroundImage: null,
   },
   {
+    id: 3,
+    title: "aboutIntro",
     color: "rgb(221, 221, 221)",
     backgroundColor: "rgb(88, 6, 6)",
     image: "./assets/images/aboutHeader.png",
