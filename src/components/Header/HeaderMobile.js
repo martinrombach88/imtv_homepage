@@ -2,6 +2,7 @@ import HeaderLinks from "./HeaderLinks";
 import HeaderLogo from "./HeaderLogo";
 import HeaderLang from "./HeaderLang";
 import { useState } from "react";
+import ClickAwayListener from "@mui/material/ClickAwayListener";
 
 const HeaderMobile = ({ headerStyle }) => {
   const headerClass = `${headerStyle} header__Mob`;
@@ -9,6 +10,10 @@ const HeaderMobile = ({ headerStyle }) => {
 
   const toggleMenu = () => {
     setMenu((prevMenu) => !prevMenu);
+  };
+
+  const handleClickAway = () => {
+    setMenu(false);
   };
 
   const list = (
@@ -40,28 +45,38 @@ const HeaderMobile = ({ headerStyle }) => {
 
   return (
     <>
-      <nav className={headerClass}>
-        <div className="header__MobNav">
-          <button type="button" className="header__MobBtn" onClick={toggleMenu}>
-            {list}
-          </button>
-          <div
-            className={
-              menu ? "header__MobLinksDisplay" : "header__MobLinksHide"
-            }
-          >
-            <HeaderLinks mobile={true} />
-            <button className="header__MobBtn" onClick={toggleMenu}>
-              {cross}
+      <ClickAwayListener
+        mouseEvent="onMouseDown"
+        touchEvent="onTouchStart"
+        onClickAway={handleClickAway}
+      >
+        <nav className={headerClass}>
+          <div className="header__MobNav">
+            <button
+              type="button"
+              className="header__MobBtn"
+              onClick={toggleMenu}
+            >
+              {list}
             </button>
+            <div
+              className={
+                menu ? "header__MobLinksDisplay" : "header__MobLinksHide"
+              }
+            >
+              <HeaderLinks mobile={true} />
+              <button className="header__MobBtn" onClick={toggleMenu}>
+                {cross}
+              </button>
+            </div>
           </div>
-        </div>
-        <div>
-          <HeaderLogo />
-        </div>
+          <div>
+            <HeaderLogo />
+          </div>
 
-        <HeaderLang />
-      </nav>
+          <HeaderLang />
+        </nav>
+      </ClickAwayListener>
     </>
   );
 };
