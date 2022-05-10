@@ -13,24 +13,40 @@ const HomeSnap = ({
 }) => {
   const lang = useLang();
   const navigate = useNavigate();
+
   let content = null;
   let section = null;
   if (object && article) {
     content = (
-      <img
-        src={object.image}
-        className="homesnap__Image"
-        alt={object.mainTitleKR}
-        onClick={() => navigate("/news_article", { state: { article } })}
-      />
+      <>
+        <img
+          src={object.image}
+          className="homesnap__Image"
+          alt={object.mainTitleKR}
+          onClick={() => navigate("/news_article", { state: { article } })}
+        />
+        <img
+          src={object.imageWide}
+          className="homesnap__ImageMobile"
+          alt={object.mainTitleKR}
+          onClick={() => navigate("/news_article", { state: { article } })}
+        />
+      </>
     );
   } else if (object && !article) {
     content = (
-      <img
-        src={object.image}
-        alt={object.mainTitleKR}
-        className="homesnap__Image"
-      />
+      <>
+        <img
+          src={object.image}
+          alt={object.mainTitleKR}
+          className="homesnap__Image"
+        />
+        <img
+          src={object.imageWide}
+          alt={object.mainTitleKR}
+          className="homesnap__ImageMobile"
+        />
+      </>
     );
   }
 

@@ -28,9 +28,24 @@
   display: flex;
 }
 
+@media (max-width: 650px) {
+  .homesnap {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .homesnap__ContentContainer,
 .homesnap__Content {
   width: 50%;
+}
+
+@media (max-width: 650px) {
+  .homesnap__ContentContainer,
+  .homesnap__Content {
+    width: 100%;
+    height: 50%;
+  }
 }
 
 .homesnap__ComponentContainer {
@@ -42,6 +57,23 @@
   width: 100%;
   height: 100%;
   cursor: pointer;
+}
+
+.homesnap__ImageMobile {
+  display: none;
+}
+@media (max-width: 650px) {
+  .homesnap__Image {
+    display: none;
+  }
+  .homesnap__ImageMobile {
+    padding-top: 10%;
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
 }
 
 .homesnap__Content {
