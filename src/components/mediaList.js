@@ -4,6 +4,7 @@ const mediaList = [
     titleKR: "쉿! 그놈을 부탁해",
     titleENG: "Shh! Take Care of Him.",
     mediaImg: "./assets/images/media/shhWide.png",
+    mediaImgTall: "./assets/images/media/shhTall.jpg",
     src: "./assets/videos/shhClip.mp4",
     prop_src: "./assets/videos/shhFull.mp4",
     channels: "olleh tv, Seezn, Skylife",

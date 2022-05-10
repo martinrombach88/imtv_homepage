@@ -2,6 +2,7 @@ import "./HomeSnap.css";
 import { useNavigate } from "react-router-dom";
 import { useLang } from "../Header/LangContext";
 import Arrow from "../About/Arrow";
+import Footer from "../Header/Footer";
 
 const HomeSnap = ({
   article,
