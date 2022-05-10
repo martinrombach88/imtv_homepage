@@ -67,10 +67,12 @@
   box-sizing: border-box;
 }
 
-.header__Btn {
+.header__Btn,
+.header__MobBtn {
+  background: #101010;
+  color: white;
   display: inline-block;
   position: relative;
-  color: white;
   text-decoration: none;
   cursor: pointer;
 }
@@ -137,11 +139,6 @@
   }
 }
 
-.header__MobBtn {
-  background: #101010;
-  color: rgb(214, 214, 214);
-}
-
 .header__MobNav {
   background: #101010;
   color: rgb(214, 214, 214);
@@ -153,14 +150,22 @@
 }
 
 .header__MobLinksDisplay {
-  font-size: 25px;
-  z-index: 100;
+  height: 100vh;
+  width: 40vw;
+  z-index: 250;
   background: #101010;
   color: rgb(214, 214, 214);
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 110%;
+  justify-content: space-evenly;
+  text-align: center;
+  top: 0%;
   left: 0%;
-  padding: 5% 10%;
+  padding: 0% 0%;
+}
+
+.header__MobLinksDisplay a:hover,
+.header__MobLinksDisplay button:hover {
+  color: rgb(127, 32, 168);
 }
