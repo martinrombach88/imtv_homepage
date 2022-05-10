@@ -9,6 +9,7 @@ import {
 import { useLang } from "../Header/LangContext";
 import Header from "../Header/Header.js";
 import "./History.css";
+import Footer from "../Header/Footer.js";
 
 const History = () => {
   const lang = useLang();
@@ -286,6 +287,7 @@ const History = () => {
           </Events>
         </Timeline>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -2,6 +2,7 @@ import Header from "../Header/Header";
 import "./Media.css";
 import MediaItem from "./MediaItem";
 import MediaItemMobile from "./MediaItemMobile";
+import Footer from "../Header/Footer";
 
 const Media = ({ mediaList }) => {
   return (
@@ -13,6 +14,7 @@ const Media = ({ mediaList }) => {
       {mediaList.map((media, index) => {
         return <MediaItemMobile media={media} key={index} />;
       })}
+      <Footer />
     </div>
   );
 };
