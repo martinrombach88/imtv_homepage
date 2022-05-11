@@ -1,7 +1,6 @@
 import { useState } from "react";
 import AboutStaffName from "./AboutStaffName";
 import Arrow from "../Arrow/Arrow";
-import Footer from "../Header/Footer";
 
 const AboutStaff = ({ staffList }) => {
   const [profile, setProfile] = useState(null);
