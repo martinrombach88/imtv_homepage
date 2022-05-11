@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useLang } from "../Header/LangContext";
-
+import Arrow from "../Arrow/Arrow";
 const NewsCards = ({ currentPosts, home, pagination }) => {
   const lang = useLang();
   const navigate = useNavigate();
@@ -35,6 +35,7 @@ const NewsCards = ({ currentPosts, home, pagination }) => {
             </div>
 
             {pagination}
+            <Arrow direction={true} />
           </div>
         </div>
       );

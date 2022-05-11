@@ -17,12 +17,26 @@
 }
 
 .footer {
+  z-index: 3;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 10vh;
 }
+
+.footer__Fixed {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+}
+
+@media (max-width: 650px) {
+  .footer__Fixed {
+    display: none;
+  }
+}
+
 .footer p {
   margin: 0;
 }
@@ -38,6 +52,7 @@
 
 .footer__Arrow {
   position: absolute;
+  bottom: 20%;
 }
 
 .initialPos {
@@ -164,7 +179,10 @@
   left: 0%;
   padding: 0% 0%;
   outline: none;
-  transition: ease-in;
+}
+
+.header__MobLinksDisplay button {
+  outline: none;
 }
 
 .header__MobLinksDisplay a:hover,

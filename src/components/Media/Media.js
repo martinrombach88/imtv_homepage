@@ -14,7 +14,6 @@ const Media = ({ mediaList }) => {
       {mediaList.map((media, index) => {
         return <MediaItemMobile media={media} key={index} />;
       })}
-      <Footer />
     </div>
   );
 };

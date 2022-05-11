@@ -1,5 +1,6 @@
 import "./About.css";
 import Header from "../Header/Header";
+import Footer from "../Header/Footer";
 import AboutPartners from "./AboutPartners.js";
 import AboutStaff from "./AboutStaff.js";
 import HomeSnap from "../HomeSnap/HomeSnap.js";
@@ -20,6 +21,7 @@ const About = ({ staffList }) => {
         styleObject={homeSnapList[2]}
         component={<AboutStaff staffList={staffList} />}
       />
+      <Footer fixed={true} />
     </div>
   );
 };

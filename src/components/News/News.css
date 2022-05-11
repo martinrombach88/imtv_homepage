@@ -121,6 +121,10 @@
   width: 50%;
 }
 
+.newsHome__ContentContainer {
+  position: relative;
+}
+
 @media (max-width: 650px) {
   .newsHome__ImageContainer {
     display: none;

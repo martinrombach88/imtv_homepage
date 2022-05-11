@@ -26,25 +26,6 @@
   font-weight: 800;
 }
 
-.about__Arrow {
-  position: absolute;
-  bottom: 2%;
-  --animation: shift;
-  animation: var(--animation, none) 1s infinite linear;
-}
-
-@keyframes shift {
-  0% {
-    transform: translateY(-10%);
-  }
-  50% {
-    transform: translateY(10%);
-  }
-  100% {
-    transform: translateY(-10%);
-  }
-}
-
 .about__Partners {
   padding-top: 10%;
   height: 90vh;

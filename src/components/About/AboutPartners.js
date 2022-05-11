@@ -1,4 +1,4 @@
-import Arrow from "./Arrow";
+import Arrow from "../Arrow/Arrow";
 
 const AboutPartners = () => {
   const generateImages = (num) => {

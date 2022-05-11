@@ -1,15 +1,16 @@
 import { useLang } from "./LangContext";
-import Arrow from "../About/Arrow.js";
+import Arrow from "../Arrow/Arrow.js";
 
-const Footer = ({ arrow }) => {
+const Footer = ({ arrow, fixed }) => {
   const lang = useLang();
+  const footerCSS = fixed ? "footer footer__Fixed" : "footer";
 
   return arrow ? (
     <div className="footer__ArrowDiv">
       <Arrow className="footer__Arrow" home={true} />
     </div>
   ) : (
-    <div className="footer">
+    <div className={footerCSS}>
       <p>Copyright IMTV All Rights Reserved</p>
       <p className="about__StaffWebDev">
         {lang

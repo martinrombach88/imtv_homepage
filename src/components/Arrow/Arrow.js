@@ -1,7 +1,9 @@
-const Arrow = ({ direction, home }) => {
+import "./Arrow.css";
+
+const Arrow = ({ direction, home, heightClass }) => {
   if (home)
     return (
-      <div className="about__Arrow">
+      <div className="arrow arrow__High">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
@@ -19,7 +21,7 @@ const Arrow = ({ direction, home }) => {
     );
   else {
     return (
-      <div className="about__Arrow">
+      <div className="arrow arrow__Low">
         {direction ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"

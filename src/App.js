@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header.js";
+import Footer from "./components/Header/Footer.js";
 import HomeSnap from "./components/HomeSnap/HomeSnap.js";
 import VideoSlider from "./components/VideoSlider/VideoSlider";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer.js";
@@ -30,6 +31,7 @@ function Home() {
         article={newsList[1]}
       />
       <HomeSnap component={<News list={newsList} home={true} />} />
+      <Footer fixed={true} />
     </div>
   );
 }

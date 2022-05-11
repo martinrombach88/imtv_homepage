@@ -17,17 +17,19 @@ const News = ({ list, home }) => {
 
   if (home) {
     return (
-      <NewsCards
-        currentPosts={currentPosts}
-        home={home}
-        pagination={
-          <NewsPagination
-            postsPerPage={postsPerPage}
-            totalPosts={list.length}
-            paginate={paginate}
-          />
-        }
-      />
+      <>
+        <NewsCards
+          currentPosts={currentPosts}
+          home={home}
+          pagination={
+            <NewsPagination
+              postsPerPage={postsPerPage}
+              totalPosts={list.length}
+              paginate={paginate}
+            />
+          }
+        ></NewsCards>
+      </>
     );
   } else {
     return (

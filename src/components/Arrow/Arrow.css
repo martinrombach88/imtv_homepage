@@ -1,0 +1,25 @@
+.arrow {
+  position: absolute;
+  --animation: shift;
+  animation: var(--animation, none) 1s infinite linear;
+}
+
+@keyframes shift {
+  0% {
+    transform: translateY(-10%);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
+}
+
+.arrow__Low {
+  bottom: 2%;
+}
+
+.arrow__High {
+  bottom: 10%;
+}

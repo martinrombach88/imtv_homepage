@@ -1,7 +1,8 @@
 import "./HomeSnap.css";
 import { useNavigate } from "react-router-dom";
 import { useLang } from "../Header/LangContext";
-import Arrow from "../About/Arrow";
+import Arrow from "../Arrow/Arrow";
+import Footer from "../Header/Footer";
 
 const HomeSnap = ({
   article,
@@ -69,45 +70,52 @@ const HomeSnap = ({
     );
   } else {
     section = (
-      <div className="homesnap__Content" style={styleObject}>
-        {lang ? (
-          <h5>{object.smallTitleKR}</h5>
-        ) : (
-          <h5>{object.smallTitleENG}</h5>
-        )}
-
-        <div>
+      <>
+        <div className="homesnap__Content" style={styleObject}>
           {lang ? (
-            <h1>{object.mainTitleKR}</h1>
+            <h5>{object.smallTitleKR}</h5>
           ) : (
-            <h3>{object.mainTitleENG}</h3>
+            <h5>{object.smallTitleENG}</h5>
           )}
 
-          {lang ? <h4>{object.subTitleKR}</h4> : <h5>{object.subTitleENG}</h5>}
-        </div>
+          <div>
+            {lang ? (
+              <h1>{object.mainTitleKR}</h1>
+            ) : (
+              <h3>{object.mainTitleENG}</h3>
+            )}
 
-        {lang ? (
-          <p
-            style={{ fontSize: "1.2em" }}
-            className="homesnap__Btn"
-            to="news_article"
-            onClick={() => navigate("/news_article", { state: { article } })}
-            state={{ lang }}
-          >
-            프로젝트 보기
-          </p>
-        ) : (
-          <p
-            style={{ fontSize: "1em" }}
-            className="homesnap__Btn"
-            to="news_article"
-            onClick={() => navigate("/news_article", { state: { article } })}
-          >
-            View Project
-          </p>
-        )}
-        <Arrow />
-      </div>
+            {lang ? (
+              <h4>{object.subTitleKR}</h4>
+            ) : (
+              <h5>{object.subTitleENG}</h5>
+            )}
+          </div>
+
+          {lang ? (
+            <p
+              style={{ fontSize: "1.2em" }}
+              className="homesnap__Btn"
+              to="news_article"
+              onClick={() => navigate("/news_article", { state: { article } })}
+              state={{ lang }}
+            >
+              프로젝트 보기
+            </p>
+          ) : (
+            <p
+              style={{ fontSize: "1em" }}
+              className="homesnap__Btn"
+              to="news_article"
+              onClick={() => navigate("/news_article", { state: { article } })}
+            >
+              View Project
+            </p>
+          )}
+
+          <Arrow />
+        </div>
+      </>
     );
   }
   if (leftImage) {
