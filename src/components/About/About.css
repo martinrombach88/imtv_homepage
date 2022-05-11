@@ -68,13 +68,10 @@
   }
 }
 @media (max-width: 650px) {
-  /* .about__PartnersContainer {
-    margin-top: 10%;
-  }
 
   .about__PartnersCycler div {
     --animation: slide;
-    animation: var(--animation, none) 50s infinite linear;
+    animation: var(--animation, none) 40s infinite linear;
     height: 180%;
   }
 
