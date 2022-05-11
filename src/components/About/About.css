@@ -68,6 +68,10 @@
   }
 }
 @media (max-width: 650px) {
+  .about__Partners {
+    height: 80vh;
+  }
+
   .about__PartnersCycler div {
     --animation: slide;
     animation: var(--animation, none) 50s infinite linear;
