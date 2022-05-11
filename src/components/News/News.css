@@ -70,7 +70,7 @@
 @media (max-width: 650px) {
   .news__Image {
     margin-top: 2%;
-    object-fit: cover;
+    object-fit: scale-down;
     width: 70vw;
     height: 30vh;
     border-radius: 2%;
