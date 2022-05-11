@@ -2,8 +2,6 @@ import Header from "../Header/Header";
 import "./Media.css";
 import MediaItem from "./MediaItem";
 import MediaItemMobile from "./MediaItemMobile";
-import Footer from "../Header/Footer";
-
 const Media = ({ mediaList }) => {
   return (
     <div className="scroll">
