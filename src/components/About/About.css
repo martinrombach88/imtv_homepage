@@ -67,7 +67,25 @@
     transform: translateY(10%);
   }
 }
+@media (max-width: 650px) {
+  .about__Partners img {
+    object-fit: contain;
+    width: 50%;
+    transition: opacity 0.2s;
+  }
 
+  @keyframes slide {
+    0% {
+      transform: translateY(10%);
+    }
+    50% {
+      transform: translateY(-235%);
+    }
+    100% {
+      transform: translateY(10%);
+    }
+  }
+}
 .about__StaffContainer {
   padding-top: 8%;
   height: 90vh;
