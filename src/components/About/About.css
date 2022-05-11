@@ -68,7 +68,6 @@
   }
 }
 @media (max-width: 650px) {
-
   .about__PartnersCycler div {
     --animation: slide;
     animation: var(--animation, none) 40s infinite linear;
@@ -90,7 +89,7 @@
     100% {
       transform: translateY(10%);
     }
-  } */
+  }
 }
 .about__StaffContainer {
   padding-top: 8%;
