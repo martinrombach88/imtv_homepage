@@ -68,6 +68,12 @@
   }
 }
 @media (max-width: 650px) {
+  .about__PartnersCycler div {
+    --animation: slide;
+    animation: var(--animation, none) 50s infinite linear;
+    height: 180%;
+  }
+
   .about__Partners img {
     object-fit: contain;
     width: 50%;
@@ -79,7 +85,7 @@
       transform: translateY(10%);
     }
     50% {
-      transform: translateY(-235%);
+      transform: translateY(-180%);
     }
     100% {
       transform: translateY(10%);
