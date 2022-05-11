@@ -21,6 +21,8 @@ const About = ({ staffList }) => {
         object={homeSnapList[3]}
         styleObject={homeSnapList[3]}
         textSection={true}
+        leftImage={true}
+        noImage={true}
         changeClass={"homesnap homesnap__ChangeMobile"}
       />
 

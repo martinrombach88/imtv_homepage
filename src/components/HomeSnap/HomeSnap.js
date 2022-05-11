@@ -58,7 +58,10 @@ const HomeSnap = ({
     content = component;
   } else if (textSection) {
     section = (
-      <div className="homesnap__Content" style={styleObject}>
+      <div
+        className={noImage ? "homesnap__NoImage" : "homesnap__Content"}
+        style={styleObject}
+      >
         <div className="homesnap__TextSection">
           {lang ? (
             <h1>{object.mainTitleKR}</h1>
@@ -134,6 +137,15 @@ const HomeSnap = ({
           style={styleObject}
         >
           {content}
+        </div>
+      </div>
+    );
+  } else if (noImage) {
+    return (
+      <div className={changeClass ? changeClass : "homesnap"}>
+        {section}
+        <div className="homesnap__ChangeMobile" style={styleObject}>
+          {/* {content} */}
         </div>
       </div>
     );

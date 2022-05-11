@@ -81,7 +81,6 @@
   .about__Partners img {
     object-fit: contain;
     width: 50%;
-    transition: opacity 0.2s;
   }
 
   @keyframes slide {

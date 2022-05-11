@@ -50,6 +50,13 @@
 
   .homesnap__ChangeMobile {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .homesnap__Content {
+    height: 100vh;
   }
 }
 
@@ -64,6 +71,13 @@
     width: 100%;
     height: 50%;
   }
+}
+
+.homesnap__NoImage {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .homesnap__ComponentContainer {
