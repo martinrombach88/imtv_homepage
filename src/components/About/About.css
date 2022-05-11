@@ -68,6 +68,10 @@
   }
 }
 @media (max-width: 650px) {
+  .about__PartnersCycler {
+    margin: 12%;
+  }
+
   .about__PartnersCycler div {
     --animation: slide;
     animation: var(--animation, none) 40s infinite linear;
@@ -79,6 +83,14 @@
     width: 50%;
   }
 
+  .about__Partners {
+    margin-bottom: 0;
+    margin-top: 10%;
+  }
+
+  .about__Partners h1 {
+    margin: 0;
+  }
   @keyframes slide {
     0% {
       transform: translateY(10%);
