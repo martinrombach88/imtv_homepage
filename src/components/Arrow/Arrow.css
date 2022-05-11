@@ -20,6 +20,10 @@
   bottom: 0%;
 }
 
+.arrow__VeryLow {
+  bottom: -5%;
+}
+
 .arrow__High {
   bottom: 10%;
 }

@@ -2,6 +2,7 @@ import "./About.css";
 import Header from "../Header/Header";
 import Footer from "../Header/Footer";
 import AboutPartners from "./AboutPartners.js";
+import AboutPartnersMobile from "./AboutPartnersMobile";
 import AboutStaff from "./AboutStaff.js";
 import HomeSnap from "../HomeSnap/HomeSnap.js";
 import homeSnapList from "../homeSnapList";
@@ -26,7 +27,14 @@ const About = ({ staffList }) => {
         changeClass={"homesnap homesnap__ChangeMobile"}
       />
 
-      <HomeSnap component={<AboutPartners />} />
+      <HomeSnap
+        component={<AboutPartners />}
+        changeClass={"homesnap homesnap__Change"}
+      />
+      <HomeSnap
+        component={<AboutPartnersMobile />}
+        changeClass={"homesnap homesnap__ChangeMobile"}
+      />
       <HomeSnap
         styleObject={homeSnapList[2]}
         component={<AboutStaff staffList={staffList} />}
