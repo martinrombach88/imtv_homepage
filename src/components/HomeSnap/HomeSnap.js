@@ -6,12 +6,12 @@ import Arrow from "../Arrow/Arrow";
 const HomeSnap = ({
   article,
   component,
-  leftImage,
-  textSection,
   object,
   styleObject,
   changeClass,
+  leftImage,
   noImage,
+  textSection,
 }) => {
   const lang = useLang();
   const navigate = useNavigate();

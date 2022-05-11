@@ -69,6 +69,7 @@
 }
 @media (max-width: 650px) {
   .about__Partners {
+    margin-top: 10%;
     height: 60vh;
   }
 
