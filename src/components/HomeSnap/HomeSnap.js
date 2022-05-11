@@ -11,13 +11,15 @@ const HomeSnap = ({
   textSection,
   object,
   styleObject,
+  changeClass,
+  noImage,
 }) => {
   const lang = useLang();
   const navigate = useNavigate();
 
   let content = null;
   let section = null;
-  if (object && article) {
+  if (object && article && !noImage) {
     content = (
       <>
         <img
@@ -34,7 +36,7 @@ const HomeSnap = ({
         />
       </>
     );
-  } else if (object && !article) {
+  } else if (object && !article && !noImage) {
     content = (
       <>
         <img
@@ -49,6 +51,8 @@ const HomeSnap = ({
         />
       </>
     );
+  } else if (noImage) {
+    content = null;
   }
 
   if (component) {
@@ -120,7 +124,7 @@ const HomeSnap = ({
   }
   if (leftImage) {
     return (
-      <div className="homesnap">
+      <div className={changeClass ? changeClass : "homesnap"}>
         {section}
         <div
           className={
@@ -136,7 +140,7 @@ const HomeSnap = ({
     );
   } else {
     return (
-      <div className="homesnap">
+      <div className={changeClass ? changeClass : "homesnap"}>
         <div
           className={
             component

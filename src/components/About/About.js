@@ -15,7 +15,15 @@ const About = ({ staffList }) => {
         styleObject={homeSnapList[3]}
         leftImage={true}
         textSection={true}
+        changeClass={"homesnap homesnap__Change"}
       />
+      <HomeSnap
+        object={homeSnapList[3]}
+        styleObject={homeSnapList[3]}
+        textSection={true}
+        changeClass={"homesnap homesnap__ChangeMobile"}
+      />
+
       <HomeSnap component={<AboutPartners />} />
       <HomeSnap
         styleObject={homeSnapList[2]}

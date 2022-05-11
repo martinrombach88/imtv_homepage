@@ -35,6 +35,24 @@
   }
 }
 
+.homesnap__Change {
+  display: flex;
+}
+
+.homesnap__ChangeMobile {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .homesnap__Change {
+    display: none;
+  }
+
+  .homesnap__ChangeMobile {
+    display: flex;
+  }
+}
+
 .homesnap__ContentContainer,
 .homesnap__Content {
   width: 50%;
