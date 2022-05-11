@@ -99,7 +99,7 @@
       transform: translateY(10%);
     }
     50% {
-      transform: translateY(-140%);
+      transform: translateY(-120%);
     }
     100% {
       transform: translateY(10%);
