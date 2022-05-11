@@ -68,11 +68,9 @@
   }
 }
 @media (max-width: 650px) {
-  .about__Partners {
-    margin-top: 30%;
-    height: 70vh;
+  .about__PartnersContainer {
+    margin-top: 5%;
   }
-
   .about__PartnersCycler div {
     --animation: slide;
     animation: var(--animation, none) 50s infinite linear;

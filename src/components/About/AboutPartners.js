@@ -16,7 +16,7 @@ const AboutPartners = () => {
 
   return (
     <>
-      <div className="about__Container">
+      <div className="about__Container about__PartnersContainer">
         <div className="about__Partners">
           <h1>PARTNERS</h1>
           <div className="about__PartnersCycler">
