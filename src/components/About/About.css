@@ -69,18 +69,19 @@
 }
 @media (max-width: 650px) {
   .about__PartnersContainer {
-    margin-top: 5%;
+    margin-top: 10%;
   }
+
+  .about__Partners {
+    height: 80%;
+  }
+
   .about__PartnersCycler div {
-    --animation: slide;
     animation: var(--animation, none) 50s infinite linear;
-    height: 180%;
   }
 
   .about__Partners img {
-    object-fit: contain;
     width: 50%;
-    transition: opacity 0.2s;
   }
 
   @keyframes slide {
@@ -88,7 +89,7 @@
       transform: translateY(10%);
     }
     50% {
-      transform: translateY(-180%);
+      transform: translateY(-160%);
     }
     100% {
       transform: translateY(10%);
