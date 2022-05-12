@@ -27,6 +27,8 @@
 @media (max-width: 650px) {
   .contact__Buttons {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
