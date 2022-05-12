@@ -46,9 +46,8 @@ const History = () => {
       fontFamily: "Inter",
       fontSize: "1.4rem",
       fontWeight: 800,
-      // color: "black",
       color: "rgb(40, 110, 180)",
-      backgroundColor: "rgb(244, 246, 248)",
+      backgroundColor: "#efefef",
     },
     marker: {
       backgroundColor: "rgb(244, 246, 248)",

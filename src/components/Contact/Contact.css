@@ -24,6 +24,12 @@
   justify-content: space-around;
 }
 
+@media (max-width: 650px) {
+  .contact__Buttons {
+    width: 100%;
+  }
+}
+
 .contact__General {
   display: flex;
   flex-direction: column;
@@ -35,7 +41,16 @@
   width: 80%;
 }
 
-.contact__Detailsh5 {
+@media (max-width: 650px) {
+  .contact__Details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.contact__Details h5 {
   padding: 2%;
 }
 
@@ -46,7 +61,25 @@
 
 .contact__Map {
   padding: 2%;
+  display: flex;
+  flex-direction: column;
 }
+
+.contact__MapMobile {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .contact__Map {
+    display: none;
+  }
+
+  .contact__MapMobile {
+    display: flex;
+    padding: 5%;
+  }
+}
+
 .contact__formDiv {
   display: flex;
   flex-direction: column;
@@ -96,4 +129,5 @@
   width: 60%;
   height: 150px;
   margin: 2%;
+  border: black 1px solid;
 }

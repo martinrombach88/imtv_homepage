@@ -73,6 +73,13 @@ const Contact = () => {
             ></iframe>
           </div>
 
+          <div className="contact__MapMobile">
+            <iframe
+              src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJqZzYim2ZfDURj9rUZJUavWo&key=AIzaSyBdomiOKlDqVL_pXimPVEzEZ3JUZ2Vj3zU"
+              title="imtv-map"
+            ></iframe>
+          </div>
+
           {contactDetails}
         </div>
       </div>
