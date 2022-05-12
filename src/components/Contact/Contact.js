@@ -17,8 +17,10 @@ const Contact = () => {
       <div className="contact__Directions">
         <h5>
           Public Transportation Information Line 6 / Airport Line Digital Media
-          City Station Exit 9 Approximately 1.2km walk from the exit
-          (approximately 20 minutes walk)
+          City Station Exit 9
+        </h5>
+        <h5>
+          Approximately 1.2km walk from the exit (approximately 20 minutes walk)
         </h5>
       </div>
     </div>
@@ -34,10 +36,10 @@ const Contact = () => {
         <h5>TEL. 02-780-0350</h5>
       </div>
       <div className="contact__Directions">
-        <h4>
-          대중교통 이용안내 6호선 / 공항선 디지털미디어시티역 9번 출구 9번
+        <h5>
+          대중교통 이용안내 6호선 / 공항5선 디지털미디어시티역 9번 출구 9번
           출구에서 도보로 약 1.2km (도보로 약 20분 소요)
-        </h4>
+        </h5>
       </div>
     </div>
   );

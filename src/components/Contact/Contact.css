@@ -60,11 +60,6 @@
   padding: 2%;
 }
 
-.contact__Address,
-.contact__Directions {
-  width: 50%;
-}
-
 .contact__Map {
   padding: 2%;
   display: flex;
