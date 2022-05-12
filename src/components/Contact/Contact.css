@@ -28,7 +28,11 @@
   .contact__Buttons {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__Buttons button {
+    margin: 2%;
   }
 }
 
