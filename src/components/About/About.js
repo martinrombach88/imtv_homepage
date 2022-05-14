@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import Footer from "../Header/Footer";
 import AboutPartners from "./AboutPartners.js";
 import AboutPartnersMobile from "./AboutPartnersMobile";
+import AboutPartnersMobile2 from "./AboutPartnersMobile2";
 import AboutStaff from "./AboutStaff.js";
 import HomeSnap from "../HomeSnap/HomeSnap.js";
 import homeSnapList from "../homeSnapList";
@@ -33,6 +34,10 @@ const About = ({ staffList }) => {
       />
       <HomeSnap
         component={<AboutPartnersMobile />}
+        changeClass={"homesnap homesnap__ChangeMobile"}
+      />
+      <HomeSnap
+        component={<AboutPartnersMobile2 />}
         changeClass={"homesnap homesnap__ChangeMobile"}
       />
       <HomeSnap
