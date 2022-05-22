@@ -89,7 +89,7 @@
 }
 
 .about__StaffContainer {
-  padding-top: 15%;
+  padding-top: 8%;
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -176,6 +176,7 @@
 
 @media (max-width: 650px) {
   .about__StaffContainer {
+    padding-top: 15%;
     margin-top: 5%;
     height: 75vh;
   }

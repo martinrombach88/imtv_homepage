@@ -18,16 +18,23 @@ const VideoSlider = ({ mediaList }) => {
           return (
             <Carousel.Item key={sliderVid.id}>
               <ReactPlayer
-                onClick={() => navigate("/video", { state: sliderVid })}
-                url={sliderVid.src}
+                url={sliderVid.clipVid}
                 playing={true}
                 controls={false}
                 loop={true}
                 muted={true}
+                height="125vh"
                 width="100%"
-                height="100%"
+                config={{
+                  youtube: {
+                    controls: 0,
+                  },
+                }}
               />
-              <Carousel.Caption bsPrefix="carousel__Details">
+              <Carousel.Caption
+                bsPrefix="carousel__Details"
+                onClick={() => navigate("/video", { state: sliderVid })}
+              >
                 <h1>{lang ? sliderVid.titleKR : sliderVid.titleENG}</h1>
               </Carousel.Caption>
             </Carousel.Item>

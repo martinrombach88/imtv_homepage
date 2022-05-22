@@ -29,7 +29,8 @@
 .carousel__Details {
   position: absolute;
   width: 100vw;
-  left: 5%;
+  text-align: center;
+  padding-top: 800px;
   bottom: 30%;
 }
 

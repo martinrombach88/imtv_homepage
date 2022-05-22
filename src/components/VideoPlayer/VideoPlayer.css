@@ -6,13 +6,12 @@
 .video__Exit {
   position: absolute;
   cursor: pointer;
-  right: 1%;
-  top: 0%;
-  font-size: 7vh;
+  right: 2%;
+  bottom: 10%;
   text-decoration: none;
-  color: rgb(53, 218, 253);
+  color: white;
 }
 
 .video__Exit:hover {
-  color: white;
+  color: rgb(140, 140, 140);
 }
