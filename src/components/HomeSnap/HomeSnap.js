@@ -78,11 +78,7 @@ const HomeSnap = ({
     section = (
       <>
         <div className="homesnap__Content" style={styleObject}>
-          {lang ? (
-            <h5>{object.smallTitleKR}</h5>
-          ) : (
-            <h5>{object.smallTitleENG}</h5>
-          )}
+          {lang ? <h5>생산 중</h5> : <h5>In Production</h5>}
 
           <div>
             {lang ? (
