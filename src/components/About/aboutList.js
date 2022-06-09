@@ -1,21 +1,6 @@
-const homeSnapList = [
+const aboutList = [
   {
     id: 0,
-    title: "aboutIntro",
-    color: "white",
-    backgroundColor: "black",
-    backgroundImage: "url('./assets/images/aboutHeader.png')",
-    width: "100%",
-  },
-  {
-    id: 1,
-    title: "aboutStaff",
-    color: "rgb(174, 213, 243)",
-    backgroundColor: "rgb(33,54,80)",
-    backgroundImage: null,
-  },
-  {
-    id: 2,
     title: "aboutIntro",
     color: "rgb(221, 221, 221)",
     backgroundColor: "rgb(88, 6, 6)",
@@ -28,6 +13,13 @@ const homeSnapList = [
     subTitleENG:
       "Founded in 2001, IMTV Ltd. has been continuously growing based on the trust of Korean and foreign broadcasters and platforms.For 20 years our talented writers, creators, and directors have produced over 60 television programs, films and dramas and over 100 documentaries.",
   },
+  {
+    id: 1,
+    title: "aboutStaff",
+    color: "rgb(174, 213, 243)",
+    backgroundColor: "rgb(33,54,80)",
+    backgroundImage: null,
+  },
 ];
 
-export default homeSnapList;
+export default aboutList;

@@ -15,7 +15,6 @@ const HomeSnap = ({
 }) => {
   const lang = useLang();
   const navigate = useNavigate();
-
   let content = null;
   let section = null;
   if (object && article && !noImage) {

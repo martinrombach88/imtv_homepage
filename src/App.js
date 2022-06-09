@@ -16,7 +16,6 @@ import ContactInquiry from "./components/Contact/ContactInquiry.js";
 import mediaList from "./components/mediaList.js";
 import newsList from "./components/newsList.js";
 import staffList from "./components/staffList.js";
-import homeSnapList from "./components/homeSnapList.js";
 import production from "./components/production.json";
 import { LangProvider } from "./components/Header/LangContext";
 import "./components/HomeSnap/HomeSnap.css";

@@ -6,22 +6,23 @@ import AboutPartnersMobile from "./AboutPartnersMobile";
 import AboutPartnersMobile2 from "./AboutPartnersMobile2";
 import AboutStaff from "./AboutStaff.js";
 import HomeSnap from "../HomeSnap/HomeSnap.js";
-import homeSnapList from "../homeSnapList";
+import aboutList from "./aboutList";
 
 const About = ({ staffList }) => {
   return (
     <div className="scrollSnap">
       <Header headerStyle={"header"} />
       <HomeSnap
-        object={homeSnapList[3]}
-        styleObject={homeSnapList[3]}
+        object={aboutList[0]}
+        styleObject={aboutList[0]}
         leftImage={true}
         textSection={true}
         changeClass={"homesnap homesnap__Change"}
       />
+
       <HomeSnap
-        object={homeSnapList[3]}
-        styleObject={homeSnapList[3]}
+        object={aboutList[0]}
+        styleObject={aboutList[0]}
         textSection={true}
         leftImage={true}
         noImage={true}
@@ -41,7 +42,7 @@ const About = ({ staffList }) => {
         changeClass={"homesnap homesnap__ChangeMobile"}
       />
       <HomeSnap
-        styleObject={homeSnapList[2]}
+        styleObject={aboutList[1]}
         component={<AboutStaff staffList={staffList} />}
       />
       <Footer fixed={true} />

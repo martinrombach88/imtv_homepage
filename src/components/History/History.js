@@ -76,22 +76,16 @@ const History = () => {
               }
               src="/assets/images/timeline/fool2022.png"
             ></ImageEvent>
-            <TextEvent
+            <ImageEvent
               date="2021"
               text={
                 lang
                   ? "[쉿! 그놈을 부탁해] 출시되었습니다. KT 오리지널 드라마에는 김슬기, 이주우, 송지은, 강율이 출연합니다."
                   : "Shh! Take Care of Him is released. The KT Original drama stars Kim Seul-gi, Lee Joo-woo, Song Ji-eun and Kang Yul."
               }
-            ></TextEvent>
-            <TextEvent
-              date="2020"
-              text={
-                lang
-                  ? "[밀 키드] 출시되었습니다. KT 오리지널 드라마에는 김슬기, 이주우, 송지은, 강율이 출연합니다."
-                  : "Meal Kid is released. The Naver web drama stars Park Na-eun and Jeong Dae-hyun."
-              }
-            ></TextEvent>
+              src="/assets/images/timeline/shh2021.jpg"
+            ></ImageEvent>
+            <ImageEvent></ImageEvent>
             <TextEvent
               date="2019"
               text={
@@ -107,6 +101,7 @@ const History = () => {
                   ? "다큐멘터리 차도 삼국지가 KBS, 윈난 TV 차이나와 함께 개봉했습니다."
                   : "Documentary Three Kingdoms of Chado is released in collaboration with KBS and Yunnan TV China."
               }
+              src="/assets/images/timeline/chado2019.jpg"
             ></TextEvent>
             <ImageEvent
               date="2018"
@@ -117,30 +112,33 @@ const History = () => {
               }
               src="/assets/images/timeline/memento2018.png"
             ></ImageEvent>
-            <TextEvent
+            <ImageEvent
               date="2018"
               text={
                 lang
                   ? "[그남자 오수] 출시됩니다. OCN 드라마에는 이종현과 김소은이 출연합니다."
                   : "Mr Osu is released. The OCN Drama stars Lee Jong-hyun and Kim So-eun."
               }
-            ></TextEvent>
-            <TextEvent
+              src="/assets/images/timeline/osu2018.png"
+            ></ImageEvent>
+            <ImageEvent
               date="2017"
               text={
                 lang
                   ? "[다시 만난 세계] 출시합니다. SBS 드라마에는 여진구와 이연이 출연합니다."
                   : "Reunited World is released. The SBS drama stars Yeo Jin-goo and Lee Yeoni."
               }
-            ></TextEvent>
-            <TextEvent
+              src="/assets/images/timeline/reunited2017.png"
+            ></ImageEvent>
+            <ImageEvent
               date="2016"
               text={
                 lang
                   ? "[월드 뮤직 - Song of Soul이] 발매되었습니다. 4부작 다큐멘터리는 KBS와 합작으로 만들어졌습니다."
                   : "World Music - Song of Soul is released. The 4 part documentary was made in collaboration with KBS."
               }
-            ></TextEvent>
+              src="/assets/images/timeline/worldmusic2016.jpg"
+            ></ImageEvent>
             <TextEvent
               date="2016"
               text={
@@ -156,7 +154,6 @@ const History = () => {
                   ? "UHD 다큐멘터리 컬러홀릭 개봉합니다."
                   : "UHD documentary Colorholic is released."
               }
-              src="/assets/images/timeline/spy2015.png"
             ></TextEvent>
             <ImageEvent
               date="2015"
@@ -167,32 +164,43 @@ const History = () => {
               }
               src="/assets/images/timeline/spy2015.png"
             ></ImageEvent>
-            <TextEvent
+            <ImageEvent
               date="2015"
               text={
                 lang
                   ? "남태현, 김민지, 손진영 주연의 웹 드라마 제로 오클락이 개봉되었습니다. 네이버, MBC Every1과 협업하여 출시되었습니다. "
                   : "Web drama Zero O'Clock is released, starring Nam Tae-hyun, Kim Min-ji and Son Jin-young. Released in collaboration with Naver and MBC Every1. "
               }
-            ></TextEvent>
-            <TextEvent
+              src="/assets/images/timeline/webdrama2015.png"
+            ></ImageEvent>
+            <ImageEvent
               date="2014"
               text={
                 lang
                   ? "정성석, 이권 주연의 IMTV 영화 <사랑의 추억> 개봉. 부천영화제 폐막작으로 선정됐다."
                   : "IMTV movie Memories of Love released, starring Seong-Suk Jeong and Kwon Lee. The movie was selected to close the Bucheon film festival."
               }
-            ></TextEvent>
-            <TextEvent
+              src="/assets/images/timeline/memories2014.jpg"
+            ></ImageEvent>
+            <ImageEvent
               date="2014"
               text={
                 lang
                   ? "KBS 어린이 드라마 '요술 두루마리' 개봉. 배우 신기준, 이지우, 천이슬."
                   : "KBS children's drama Magic Scroll is released. Stars Ki-joon Shin, Ji-woo Lee and Lee Seul Cheon."
               }
-            ></TextEvent>
-
-            <TextEvent
+              src="/assets/images/timeline/magicscroll2014.jpg"
+            ></ImageEvent>
+            <ImageEvent
+              date="2013"
+              text={
+                lang
+                  ? "KBS 사극 '곡비' 개봉. 배우 김유정, 서준영."
+                  : "KBS Period Drama Gokbi is released. Stars Kim Yoo-jung and Seo Jun-young."
+              }
+              src="/assets/images/timeline/gokbi2013.jpg"
+            ></ImageEvent>
+            <ImageEvent
               date="2013"
               text={
                 lang
@@ -200,7 +208,7 @@ const History = () => {
                   : "Inside K-Pop documentary released on National Geographic channels."
               }
               src="/assets/images/timeline/kpop2013.png"
-            ></TextEvent>
+            ></ImageEvent>
             <ImageEvent
               date="2012"
               text={
@@ -210,14 +218,15 @@ const History = () => {
               }
               src="/assets/images/timeline/masters2012.jpg"
             ></ImageEvent>
-            <TextEvent
+            <ImageEvent
               date="2011"
               text={
                 lang
                   ? "KBS 드라마스페셜 <사망한 아내> 개봉. 드라마 주연 조희봉, 이세은."
                   : "KBS Drama special My Wife Disappeared released. Drama stars Jo Hee-bong and Lee Se-eun."
               }
-            ></TextEvent>
+              src="/assets/images/timeline/wife2011.jpg"
+            ></ImageEvent>
             <TextEvent
               date="2008"
               text={
@@ -251,30 +260,33 @@ const History = () => {
               }
               src="/assets/images/timeline/natgeo2006.png"
             ></ImageEvent>
-            <TextEvent
+            <ImageEvent
               date="2004"
               text={
                 lang
                   ? "신화의 비밀 창조물이 공개됩니다.KBS 다큐멘터리는 2005년과 2006년 전경련 대상을 수상하며 총 120부작으로 방영됩니다."
                   : "Secret Creation of Myth is released. The KBS documentary wins the FKI Grand Prize in 2005 and 2006 and airs for a total of 120 episodes."
               }
-            ></TextEvent>
-            <TextEvent
+              src="/assets/images/timeline/myth2004.jpg"
+            ></ImageEvent>
+            <ImageEvent
               date="2003"
               text={
                 lang
                   ? "KBS 다큐멘터리 생사의 비밀이 공개됐습니다."
                   : "KBS documentary Secret of the Life and Death is released."
               }
-            ></TextEvent>
-            <TextEvent
+              src="/assets/images/timeline/secret2003.jpg"
+            ></ImageEvent>
+            <ImageEvent
+              src="/assets/images/timeline/waterislife2002.jpg"
               date="2002"
               text={
                 lang
                   ? "Water is Life가 출시되었습니다. SBS 다큐멘터리는 제6회 YWCA 최우수 환경 TV 프로그램상을 수상했습니다."
                   : "Water is Life is released. The SBS documentary is awarded the 6th YWCA Best Environmental TV Program Award."
               }
-            ></TextEvent>
+            ></ImageEvent>
             <TextEvent
               date="2001"
               text={
