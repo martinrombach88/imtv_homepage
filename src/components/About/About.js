@@ -45,7 +45,7 @@ const About = ({ staffList }) => {
         styleObject={aboutList[1]}
         component={<AboutStaff staffList={staffList} />}
       />
-      <Footer fixed={true} />
+      <Footer />
     </div>
   );
 };
