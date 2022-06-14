@@ -1,3 +1,1 @@
-A volunteer development project for the Korean media company IMTV.
-
-Current progress: https://imtv.netlify.app/
+This repository of IMTV home has been archived. It remains as a record of my development process if you are interested.
